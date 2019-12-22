@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Samples>
+  <Sample Source="Other.IntroductionPage" Title="Introduction" IsTitle="True"/>
+
+  <Sample Source="UseCases.UseCasesIntroductionPage" Title="Use cases" IsTitle="True"/>
+  <Sample Source="UseCases.SvgLayoutSample" Title="User interface from svg" Description="This sample shows how it is possible to define the whole user interface in vector drawing application, save the design into svg file and read it with Ab2d.ReaderSvg.\n\nBecause the names of the elements are preserved it is very simple to assign mouse events to them and make them interactive. To use the sample move mouse over button and click on them."/>
+  <Sample Source="UseCases.AnimationTest" Title="Animation Sample" Description="This sample shows how easy is to create animated effects with WPF animations. Because elements read from svg files are vector based they preserve details regardless of the transformation applied to them."/>
+
+  <Sample Source="Visio.VisioIntroductionPage" Title="Microsoft Visio" IsTitle="True"/>
+  <Sample Source="Visio.DynamicVisioFromXaml" Title="DynamicVisioFromXaml" Description="This sample shows how to create a simple WPF application that is using a drawing that was created in Microsoft Visio, saved into svg file and converted into xaml with ViewerSvg.\n\nYou can play or stop the animation, select the step by changing the slider or change the object background by moving the mouse over object."/>
+  <Sample Source="Visio.DynamicVisioWithReaderSvg" Title="DynamicVisioWithReaderSvg" Description="This sample shows how to create a simple WPF application that is using a drawing that was created in Microsoft Visio, saved into svg file and imported into our WPF application with Ab2d.ReaderSvg library.\nYou can play or stop the animation, select the step by changing the slider or change the object background by moving the mouse over object."/>
+  <Sample Source="Visio.NetworkWithEmbeddedData" Title="NetworkWithEmbeddedData" Description="This sample demonstrates how to read the custom properties data from svg file created in Microsoft Visio.\n\nThe data can be previewed with moving the mouse over computers. With selecting a row in DataGrid the related computer is selected.\n\nNote that with ViewerSvg it is possible to export the embedded data as xml serialized DataTable.\n\nThe sample is using DataGrid control from WPF Toolkit (to use the sample compatible with .Net 3.5). The control is already part of .Net 4 framework."/>
+  <Sample Source="Visio.OfficePlanSample" Title="OfficePlanSample" Description="You can preview the custom properties that are defined for the objects by moving the mouse over the object.\nIt is also possible to show or hide specific layers that were defined in Microsoft Visio.\nThe office plan for the sample was created in Microsoft Visio. It was saved into svg file and imported into our WPF application with Ab2d.ReaderSvg library."/>
+
+  <Sample Source="Controls.ControlsIntroductionPage" Title="Controls" IsTitle="True"/>
+  <Sample Source="Controls.SvgViewboxSample" Title="SvgViewbox" Description=""/>
+  <Sample Source="Controls.SvgDrawingSample" Title="SvgDrawing" Description=""/>
+  <Sample Source="Controls.DataBindingTest" Title="Data binding" Description="This sample shows how easy is to data bind to SvgViewbox's Source property."/>
+
+  <Sample Source="Other.OtherIntroductionPage" Title="Other" IsTitle="True"/>
+  <Sample Source="CodeSamples.SimpleOpen" Title="Open svg file" Description="This sample can be used to open any svg file by clicking on load button or by dragging and dropping the svg file to the window."/>
+  <Sample Source="CodeSamples.AddToStackPanel" Title="Add to StackPanel" Description="This sample shows how the size of the read objects can be simply controlled by the parent StackPanel."/>
+
+  <Sample Source="Other.AutoSizeSample" Title="AutoSize Sample" Description="This sample shows the difference between setting AutoSize to true or false."/>
+  <Sample Source="Other.SvgComponents" Title="Svg Components" Description="This sample shows how it is possible to access individual elements or groups of the svg file.\n\nSelecting the item in the list on the right side will highlight the related object."/>
+  <Sample Source="Other.SvgzSample" Title="Svgz Sample" Description="This sample demonstrates the use of compressed svg (svgz) files."/>
+  <Sample Source="Other.GetXamlSample" Title="GetXaml Sample" Description="This sample shows how to use GetXaml method."/>
+  <Sample Source="Other.RenderToBitmapSample" Title="RenderToBitmap" Description="This sample shows how to use RenderToBitmap method to render svg file to bitmap and save the bitmap to disk."/>
+  <Sample Source="Other.TrueTransformSample" Title="TrueTransform Sample" Description=""/>
+  <Sample Source="Other.GroupOptimizationsSample" Title="Group Optimizations" Description="This sample shows how different optimizations produce different objects structure and different property values on objects.\n\n\b1) No optimization\b - the object's hierarchy is the same as in svg file\n\b2) OptimizeObjectGroups\b - the Canvases that contain only other canvases are removed\n\b3) FlattenHierarchies\b - Removes all child Canvases and puts all objects under one Canvas\n\b4) FlattenHierarchy, TransformShapes\b - In addition to FlattenHierarchies the shape values are transformed so that the RenderTransform can be removed"/>
+
+  <Sample Source="ProgressReport.ProgressIntroductionPage" Title="Reading progress" IsTitle="True"/>
+  <Sample Source="ProgressReport.ProgressReportSample" Title="Progress report sample" Description="This sample shows how to report progress when reading svg files.\n\nThis is useful when large svg files are read. The samples do not include any large svg files so it is possible to set additional delay to simulate the large files."/>
+  <Sample Source="ProgressReport.MultithreadedSample" Title="Multi-threaded reading" Description="This sample shows how to read svg file in another thread, freeze the read objects and use them in UI thread.\nSee introduction to this section to read more about the sample.\n\nObserve that when the reading is not done on background thread (unchecking the &quot;Load in background thread&quot; checkbox) the UI is total unresponsive during load."/>
+
+  <Sample Source="Other.OtherSamplesIntroPage" Title="Other samples" IsTitle="True"/>
+  <Sample Source="/Resources/SvgResourceDictionaryWriter.jpg" Title="ResourceDictionaryWriter" Description="\bResourceDictionaryWriter\b is a WPF application that can be used to create a ResourceDictionary XAML from multiple svg files (available with full source code \bin a separate solution\b)"/>
+  <Sample Source="/Resources/ReaderSvg-WinForms.PNG" Title="WinForms sample" Description="\bReaderSvg.WinFormsSample\b solution shows how easy is to use Ab2d.ReaderSvg inside WinForms application (\bin a separate solution\b)."/>
+  <Sample Source="/Resources/ReaderSvgSilverlightSample.jpg" Title="Silverlight samples" Description="Two \bSilverlight samples\b show how to use XAML created from svg file with ViewerSvg (\bin the same solution\b as ReaderSvgSamples application)."/>
+  <Sample Source="/Resources/SvgToPngConverter.JPG" Title="SvgToPngConverter" Description="\bSvgToPngConverter\b solution is a simple console application that can be used to convert svg files to png or jpg files (\bin a separate solution\b)."/>
+</Samples>

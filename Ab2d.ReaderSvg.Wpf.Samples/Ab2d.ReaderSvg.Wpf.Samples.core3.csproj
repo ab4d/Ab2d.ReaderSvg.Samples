@@ -1,0 +1,112 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>Ab2d.Samples.ReaderSvgSamples</AssemblyName>
+    <ApplicationIcon>ab4d.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>TRACE;CORE3</DefineConstants>
+  </PropertyGroup>
+ 
+  <ItemGroup>
+    <Compile Remove="Properties\AssemblyInfo.cs" />
+    <Compile Remove="Properties\Resources.Designer.cs" />
+    <Compile Remove="Properties\Settings.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Properties\Resources.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ab4d.ico" />
+    <None Remove="app.config" />
+    <None Remove="packages.config" />
+    <None Remove="Resources\ab4d-logo.png" />
+    <None Remove="Resources\bb_dvd_.png" />
+    <None Remove="Resources\bb_dvd_.svg" />
+    <None Remove="Resources\bb_dvd_.txt" />
+    <None Remove="Resources\birthday_cake.svg" />
+    <None Remove="Resources\birthday_cake.svgz" />
+    <None Remove="Resources\groups test.svg" />
+    <None Remove="Resources\home1.svg" />
+    <None Remove="Resources\home11.svg" />
+    <None Remove="Resources\home6.svg" />
+    <None Remove="Resources\messagebox_info.svg" />
+    <None Remove="Resources\Office plan.svg" />
+    <None Remove="Resources\paint.svg" />
+    <None Remove="Resources\party_invitation.svg" />
+    <None Remove="Resources\ReaderSvg-WinForms.PNG" />
+    <None Remove="Resources\ReaderSvgSilverlightSample.jpg" />
+    <None Remove="Resources\Sample Network.svg" />
+    <None Remove="Resources\shamrock_for_march_natha_01.svg" />
+    <None Remove="Resources\SvgResourceDictionaryWriter.jpg" />
+    <None Remove="Resources\SvgToPngConverter.JPG" />
+    <None Remove="Resources\svg_layout.svg" />
+    <None Remove="Resources\TrialVersionNotice2D.png" />
+    <None Remove="Resources\ViewerSvg visio.svg" />
+    <None Remove="Samples.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\birthday_cake.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\birthday_cake.svgz">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\groups test.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\messagebox_info.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\paint.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\shamrock_for_march_natha_01.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\svg_layout.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ab2d.ReaderSvg" Version="7.1.7295" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ab4d.ico" />
+    <Resource Include="Resources\ab4d-logo.png" />
+    <Resource Include="Resources\bb_dvd_.png" />
+    <Resource Include="Resources\bb_dvd_.svg" />
+    <Resource Include="Resources\bb_dvd_.txt" />
+    <Resource Include="Resources\home1.svg" />
+    <Resource Include="Resources\home11.svg" />
+    <Resource Include="Resources\home6.svg" />
+    <Resource Include="Resources\Office plan.svg" />
+    <Resource Include="Resources\party_invitation.svg" />
+    <Resource Include="Resources\ReaderSvg-WinForms.PNG" />
+    <Resource Include="Resources\ReaderSvgSilverlightSample.jpg" />
+    <Resource Include="Resources\Sample Network.svg" />
+    <Resource Include="Resources\SvgResourceDictionaryWriter.jpg" />
+    <Resource Include="Resources\SvgToPngConverter.JPG" />
+    <Resource Include="Resources\TrialVersionNotice2D.png" />
+    <Resource Include="Resources\ViewerSvg visio.svg" />
+    <Resource Include="Samples.xml" />
+  </ItemGroup>
+
+</Project>

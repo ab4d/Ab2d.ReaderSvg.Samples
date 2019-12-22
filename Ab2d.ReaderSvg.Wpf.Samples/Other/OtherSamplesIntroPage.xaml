@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="Ab2d.Samples.ReaderSvgSamples.Other.OtherSamplesIntroPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:common="clr-namespace:Ab2d.Samples.ReaderSvgSamples">
+    <UserControl.Background>
+        <LinearGradientBrush  StartPoint="0,1" EndPoint="0,0">
+            <GradientStop Color="#FCCC" Offset="0"/>
+            <GradientStop Color="#FFFFFFFF" Offset=".5"/>
+        </LinearGradientBrush>
+    </UserControl.Background>
+    <Grid>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Orientation="Vertical" Margin="20 10">
+                <!-- NOTE: In the previous versions of the samples FlowDocumentReader was used to show info pages. But because this control always thrown an exception that 'PresentationUI.Aero2' was not found (the exception was handled by .Net code, but it always stopped the debugger if stop on exception was turned on), I have upgraded TextBlock to add some additional markup. -->
+                <common:TextBlockEx Style="{StaticResource InfoContent}">
+                    The currently running \bReaderSvgSamples\b application contain only the most importants samples for the Ab2d.ReaderSvg library.\n
+                    \n
+                    But the library comes with some other samples in other projects and solutions:\n
+                    \n
+                    \*\bResourceDictionaryWriter\b solution is a WPF application that can be used to create a ResourceDictionary XAML from multiple svg files (in a separate solution).
+                    \n
+                    \*\bReaderSvg.WinFormsSample\b solution shows how easy is to use Ab2d.ReaderSvg inside WinForms application (in a separate solution).\n
+                    \n
+                    \*Two \bSilverlight samples\b show how to use XAML created from svg file with ViewerSvg (in the same solution as ReaderSvgSamples application).\n
+                    \n
+                    \*\bSvgToPngConverter\b solution is a simple console application that can be used to convert svg files to png or jpg files (in a separate solution).\n
+                </common:TextBlockEx>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

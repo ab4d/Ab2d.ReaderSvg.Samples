@@ -1,0 +1,1006 @@
+﻿<UserControl x:Class="Ab2d.Samples.ReaderSvgSamples.Visio.DynamicVisioFromXaml"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <!-- Exported with ViewerSvg and Ab2d.ReaderSvg. See www.ab4d.com for more WPF tools. -->            
+        <Viewbox Grid.Row="0" Stretch="Uniform">
+            <Canvas Width="568.369" Height="551.361">
+                <Canvas Canvas.Left="-27.627" Canvas.Top="-27.626">
+                    <Canvas Name="Page_1">
+                        <Canvas Name="Horizontal_holder" RenderTransform="1,0,0,1,28.3465003967285,-17.0079002380371">
+                            <Canvas Name="Sheet_2" RenderTransform="1,0,0,1,0,-479.054992675781">
+                                <Rectangle Fill="White" Stroke="Black" StrokeThickness="0.24" Width="567.169" Height="28.586" Canvas.Left="-0.12" Canvas.Top="566.809"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_3">
+                                <Rectangle Stroke="Black" StrokeThickness="0.72" Width="567.649" Height="550.641" Canvas.Left="-0.36" Canvas.Top="44.994"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_4" RenderTransform="1,0,0,1,0,-507.402008056641">
+                                <Rectangle Fill="White" Stroke="Black" StrokeThickness="0.24" Width="567.169" Height="42.76" Canvas.Left="-0.12" Canvas.Top="552.636"/>
+                                <TextBlock Text="Creating dynamic Visio diagram" FontFamily="Arial" FontStyle="Normal" FontWeight="Bold" FontSize="24." Foreground="#FF1F477D" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="2" Canvas.Top="559.1"/>
+                            </Canvas>
+                        </Canvas>
+                        <Canvas Name="Functional_band_16" RenderTransform="1,0,0,1,28.3465003967285,-141.731994628906">
+                            <Canvas Name="Sheet_21">
+                                <Rectangle Fill="#FFD9D9D9" Stroke="Black" StrokeThickness="0.24" Width="567.169" Height="99.453" Canvas.Left="-0.12" Canvas.Top="495.943"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_22">
+                                <Rectangle Fill="#FFA6A6A6" Stroke="Black" StrokeThickness="0.24" Width="35.673" Height="99.453" Canvas.Left="-0.12" Canvas.Top="495.943"/>
+                            </Canvas>
+                            <Canvas Name="shape16_14">
+                                <Canvas RenderTransform="6.12303176911189E-17,-1,1,6.12303176911189E-17,0,0">
+                                    <TextBlock Text="Application " FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="12." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="-575.02" Canvas.Top="3.06"/>
+                                    <TextBlock Text="creation" FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="12." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="-567.02" Canvas.Top="17.46"/>
+                                </Canvas>
+                            </Canvas>
+                        </Canvas>
+                        <Canvas Name="Functional_band" RenderTransform="1,0,0,1,28.3465003967285,-240.945007324219">
+                            <Canvas Name="Sheet_6">
+                                <Rectangle Fill="#FFFACCA7" Stroke="Black" StrokeThickness="0.24" Width="567.169" Height="170.319" Canvas.Left="-0.12" Canvas.Top="425.077"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_7">
+                                <Rectangle Fill="#FFF28226" Stroke="Black" StrokeThickness="0.24" Width="35.673" Height="170.319" Canvas.Left="-0.12" Canvas.Top="425.077"/>
+                            </Canvas>
+                            <Canvas Name="shape5_22">
+                                <Canvas RenderTransform="6.12303176911189E-17,-1,1,6.12303176911189E-17,0,0">
+                                    <TextBlock Text="XAML creation" FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="12." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="-549.59" Canvas.Top="10.26"/>
+                                </Canvas>
+                            </Canvas>
+                        </Canvas>
+                        <Canvas Name="Functional_band_8" RenderTransform="1,0,0,1,28.3465003967285,-17.0079002380371">
+                            <Canvas Name="Sheet_9">
+                                <Rectangle Fill="#FFDA9792" Stroke="Black" StrokeThickness="0.24" Width="567.169" Height="124.964" Canvas.Left="-0.12" Canvas.Top="470.431"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_10">
+                                <Rectangle Fill="#FF9D3D35" Stroke="Black" StrokeThickness="0.24" Width="35.673" Height="124.964" Canvas.Left="-0.12" Canvas.Top="470.431"/>
+                            </Canvas>
+                            <Canvas Name="shape8_29">
+                                <Canvas RenderTransform="6.12303176911189E-17,-1,1,6.12303176911189E-17,0,0">
+                                    <TextBlock Text="Happy users" FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="12." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="-566.6" Canvas.Top="10.26"/>
+                                </Canvas>
+                            </Canvas>
+                        </Canvas>
+                        <Canvas Name="Functional_band_11" RenderTransform="1,0,0,1,28.3465003967285,-411.023986816406">
+                            <Canvas Name="Sheet_12">
+                                <Rectangle Fill="#FFCADAA9" Stroke="Black" StrokeThickness="0.24" Width="567.169" Height="85.279" Canvas.Left="-0.12" Canvas.Top="510.116"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_13">
+                                <Rectangle Fill="#FF85A446" Stroke="Black" StrokeThickness="0.24" Width="35.673" Height="85.279" Canvas.Left="-0.12" Canvas.Top="510.116"/>
+                            </Canvas>
+                            <Canvas Name="shape11_36">
+                                <Canvas RenderTransform="6.12303176911189E-17,-1,1,6.12303176911189E-17,0,0">
+                                    <TextBlock Text="Diagram " FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="12." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="-575.43" Canvas.Top="3.06"/>
+                                    <TextBlock Text="creation" FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="12." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="-574.1" Canvas.Top="17.46"/>
+                                </Canvas>
+                            </Canvas>
+                        </Canvas>
+                        <Canvas Name="Step1_1" RenderTransform="1,0,0,1,79.3701019287109,-425.196990966797">
+                            <Rectangle Fill="White" Stroke="Black" StrokeThickness="0.24" Width="105.122" Height="56.933" Canvas.Left="-0.12" Canvas.Top="538.463"/>
+                            <Canvas>
+                                <TextBlock Text="Creating" FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="25.98" Canvas.Top="541.427"/>
+                                <TextBlock Text="Microsoft Visio " FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="6.93" Canvas.Top="558.227"/>
+                                <TextBlock Text="diagram" FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="27.15" Canvas.Top="575.026"/>
+                            </Canvas>
+                        </Canvas>
+                        <Canvas Name="Step1_3" RenderTransform="1,0,0,1,377.007995605469,-425.196990966797">
+                            <Path Fill="White" Stroke="Black" StrokeThickness="0.24" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M-14.170,595.280L76.540,595.280 104.880,538.580 14.170,538.580 -14.170,595.280z"/>
+                            <TextBlock Text="svg file" FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="23.57" Canvas.Top="558.227"/>
+                        </Canvas>
+                        <Canvas Name="Step2_1" RenderTransform="1,0,0,1,221.102005004883,-325.984008789063">
+                            <Rectangle Fill="White" Stroke="Black" StrokeThickness="0.24" Width="133.468" Height="56.933" Canvas.Left="-0.12" Canvas.Top="538.463"/>
+                            <Canvas>
+                                <TextBlock Text="Converting svg to " FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="12.14" Canvas.Top="541.427"/>
+                                <TextBlock Text="XAML with " FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="33.16" Canvas.Top="558.227"/>
+                                <TextBlock Text="ViewerSvg" FontFamily="Arial" FontStyle="Normal" FontWeight="Bold" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="31.21" Canvas.Top="575.026"/>
+                            </Canvas>
+                        </Canvas>
+                        <Canvas Name="Step2_3" RenderTransform="1,0,0,1,313.227996826172,-253.70100402832">
+                            <Path Fill="White" Stroke="Black" StrokeThickness="0.24" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M-10.630,595.280L81.500,595.280 102.760,552.760 10.630,552.760 -10.630,595.280z"/>
+                            <Canvas>
+                                <TextBlock Text="XAML" FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="27" Canvas.Top="556.917"/>
+                                <TextBlock Text="for WPF" FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="20.4" Canvas.Top="573.717"/>
+                            </Canvas>
+                        </Canvas>
+                        <Canvas Name="Step1_2" RenderTransform="1,0,0,1,219.684997558594,-425.196990966797">
+                            <Rectangle Fill="White" Stroke="Black" StrokeThickness="0.24" Width="92.366" Height="56.933" Canvas.Left="-0.12" Canvas.Top="538.463"/>
+                            <Canvas>
+                                <TextBlock Text="Saving Visio " FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="7.54" Canvas.Top="549.827"/>
+                                <TextBlock Text="to svg file" FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="16.49" Canvas.Top="566.627"/>
+                            </Canvas>
+                        </Canvas>
+                        <Canvas Name="Step2_2" RenderTransform="1,0,0,1,167.244003295898,-253.70100402832">
+                            <Path Fill="White" Stroke="Black" StrokeThickness="0.24" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M-10.630,595.280L92.830,595.280 114.090,552.760 10.630,552.760 -10.630,595.280z"/>
+                            <Canvas>
+                                <TextBlock Text="XAML for " FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="22.56" Canvas.Top="556.917"/>
+                                <TextBlock Text="Silverlight" FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="21.39" Canvas.Top="573.717"/>
+                            </Canvas>
+                        </Canvas>
+                        <Canvas Name="Step3_2" RenderTransform="1,0,0,1,308.976013183594,-162.992004394531">
+                            <Rectangle Fill="White" Stroke="Black" StrokeThickness="0.24" Width="100.87" Height="56.933" Canvas.Left="-0.12" Canvas.Top="538.463"/>
+                            <Canvas>
+                                <TextBlock Text="Creating WPF " FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="6.36" Canvas.Top="549.827"/>
+                                <TextBlock Text="application" FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="16.85" Canvas.Top="566.627"/>
+                            </Canvas>
+                        </Canvas>
+                        <Canvas Name="Step3_1" RenderTransform="1,0,0,1,160.865997314453,-162.992004394531">
+                            <Rectangle Fill="White" Stroke="Black" StrokeThickness="0.24" Width="116.46" Height="56.933" Canvas.Left="-0.12" Canvas.Top="538.463"/>
+                            <Canvas>
+                                <TextBlock Text="Creating " FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="31.65" Canvas.Top="541.427"/>
+                                <TextBlock Text="Silverlight " FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="27.77" Canvas.Top="558.227"/>
+                                <TextBlock Text="application" FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="24.64" Canvas.Top="575.026"/>
+                            </Canvas>
+                        </Canvas>
+                        <Canvas Name="Arrow1_2" RenderTransform="1,0,0,1,184.251998901367,-446.457000732422">
+                            <Path Stroke="Black" StrokeThickness="1.2" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M0.000,588.190L27.990,588.190"/>
+                            <Path Fill="Black" StrokeThickness="1" RenderTransform="-3.7200000333786,0,0,-3.7200000333786,35.4300000667572,588.190002441406" Data="M2.000,1.000L0.000,0.000 2.000,-1.000 2.000,1.000"/>
+                        </Canvas>
+                        <Canvas Name="Arrow1_3" RenderTransform="1,0,0,1,311.811004638672,-446.457000732422">
+                            <Path Stroke="Black" StrokeThickness="1.2" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M0.000,588.190L57.760,588.190"/>
+                            <Path Fill="Black" StrokeThickness="1" RenderTransform="-3.7200000333786,0,0,-3.7200000333786,65.1999986171722,588.190002441406" Data="M2.000,1.000L0.000,0.000 2.000,-1.000 2.000,1.000"/>
+                        </Canvas>
+                        <Canvas Name="Arrow2_1" RenderTransform="1,0,0,1,422.361999511719,-425.196990966797">
+                            <Path Stroke="Black" StrokeThickness="1.2" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M0.000,595.280L0.000,619.370 -134.650,619.370 -134.650,630.360"/>
+                            <Path Fill="Black" StrokeThickness="1" RenderTransform="-2.27776783854744E-16,-3.7200000333786,3.7200000333786,-2.27776783854744E-16,-134.649993896484,637.799985647202" Data="M2.000,1.000L0.000,0.000 2.000,-1.000 2.000,1.000"/>
+                        </Canvas>
+                        <Canvas Name="Arrow2_3" RenderTransform="1,0,0,1,287.717010498047,-325.984008789063">
+                            <Path Stroke="Black" StrokeThickness="1.2" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M0.000,595.280L0.000,612.280 71.570,612.280 71.570,617.600"/>
+                            <Path Fill="Black" StrokeThickness="1" RenderTransform="-2.27776783854744E-16,-3.7200000333786,3.7200000333786,-2.27776783854744E-16,71.5699996948242,625.039975881577" Data="M2.000,1.000L0.000,0.000 2.000,-1.000 2.000,1.000"/>
+                        </Canvas>
+                        <Canvas Name="Arrow2_2" RenderTransform="1,0,0,1,287.717010498047,-325.984008789063">
+                            <Path Stroke="Black" StrokeThickness="1.2" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M0.000,595.280L0.000,612.280 -68.740,612.280 -68.740,617.600"/>
+                            <Path Fill="Black" StrokeThickness="1" RenderTransform="-2.27776783854744E-16,-3.7200000333786,3.7200000333786,-2.27776783854744E-16,-68.7399978637695,625.039975881577" Data="M2.000,1.000L0.000,0.000 2.000,-1.000 2.000,1.000"/>
+                        </Canvas>
+                        <Canvas Name="Arrow3_2" RenderTransform="1,0,0,1,352.204986572266,-253.70100402832">
+                            <Path Stroke="Black" StrokeThickness="1.2" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M7.090,595.280L7.090,621.850"/>
+                            <Path Fill="Black" StrokeThickness="1" RenderTransform="-2.27776783854744E-16,-3.7200000333786,3.7200000333786,-2.27776783854744E-16,7.09000015258789,629.289975881577" Data="M2.000,1.000L0.000,0.000 2.000,-1.000 2.000,1.000"/>
+                        </Canvas>
+                        <Canvas Name="Arrow3_1" RenderTransform="1,0,0,1,211.889999389648,-253.70100402832">
+                            <Path Stroke="Black" StrokeThickness="1.2" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M7.090,595.280L7.090,621.850"/>
+                            <Path Fill="Black" StrokeThickness="1" RenderTransform="-2.27776783854744E-16,-3.7200000333786,3.7200000333786,-2.27776783854744E-16,7.09000015258789,629.289975881577" Data="M2.000,1.000L0.000,0.000 2.000,-1.000 2.000,1.000"/>
+                        </Canvas>
+                        <Canvas Name="User1" RenderTransform="1,0,0,1,170.078994750977,-35.4331016540527">
+                            <Canvas Name="Sheet_33" RenderTransform="1,0,0,1,8.43307018280029,-10.5100002288818">
+                                <Path Fill="#00000000" StrokeThickness="1" Data="M37.300,555.900L33.440,557.960A2.277,2.277,-180.000,0,0,32.460,558.880A28.036,28.036,-180.000,0,0,31.820,565.720A37.194,37.194,-180.000,0,0,27.550,568.150L27.520,567.150 27.380,565.940 15.510,559.470 14.380,560.030 14.880,567.550 0.000,576.010 0.000,576.870 32.740,595.280 54.000,583.190 54.000,582.320 50.890,580.560 51.530,565.810 48.690,564.180A10.672,10.672,-180.000,0,0,43.050,556.710A32.029,32.029,0.000,0,1,43.020,555.830A5.806,5.806,-180.000,0,0,45.110,550.910A5.178,5.178,-180.000,0,0,40.160,545.430A5.145,5.145,-180.000,0,0,35.230,550.830A5.906,5.906,-180.000,0,0,37.300,555.900z"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_34" RenderTransform="1,0,0,1,56.3432006835938,-25.2224998474121">
+                                <Path Fill="#FFCC6633" StrokeThickness="1" Data="M0.000,593.590L0.310,578.640 3.620,580.520 2.980,595.280 1.450,594.410 0.000,593.590z"/>
+                                <Path StrokeThickness="1" Data="M0.000,593.590L0.310,578.640 3.620,580.520 2.980,595.280 1.450,594.410"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_35" RenderTransform="1,0,0,1,57.1185989379883,-39.3051986694336">
+                                <Path StrokeThickness="1" Data="M0.000,592.980L2.840,594.600 1.290,595.280 0.020,594.500 0.000,592.980z">
+                                    <Path.Fill>
+                                        <LinearGradientBrush StartPoint="0,1" EndPoint="0,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                            <GradientStop Color="#FFF6F8B0" Offset="0"/>
+                                            <GradientStop Color="#FFDAB971" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                                <Path StrokeThickness="1" Data="M0.000,592.980L2.840,594.600 1.290,595.280 0.020,594.500"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_36" RenderTransform="1,0,0,1,8.43307018280029,-11.3767004013062">
+                                <Path StrokeThickness="1" Data="M0.000,576.880L21.360,564.740 54.000,583.190 32.760,595.280 0.000,576.880z">
+                                    <Path.Fill>
+                                        <RadialGradientBrush Center="0,0" RadiusX="1" RadiusY="1" GradientOrigin="0,0" MappingMode="RelativeToBoundingBox">
+                                            <GradientStop Color="#FFF6F8B0" Offset="0"/>
+                                            <GradientStop Color="#FFDAB971" Offset="1"/>
+                                        </RadialGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                            </Canvas>
+                            <Canvas Name="Sheet_37" RenderTransform="1,0,0,1,8.43307018280029,-10.5100002288818">
+                                <Path Fill="#FFCC6633" Stroke="#FFCC6633" StrokeThickness="0.218" StrokeMiterLimit="3" Data="M0.000,576.870L32.740,595.280 32.760,594.410 0.000,576.010 0.000,576.870z M51.120,583.940L32.760,594.410 32.760,595.270 54.000,583.190 54.000,582.320 51.120,583.940z"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_38" RenderTransform="1,0,0,1,30.0737991333008,-22.4288997650146">
+                                <Path StrokeThickness="1" Data="M4.890,585.890L0.000,588.690 11.270,595.280 16.120,592.470 4.850,585.880 4.890,585.890z">
+                                    <Path.Fill>
+                                        <VisualBrush ViewportUnits="RelativeToBoundingBox" Viewport="0.000,0.000,1.000,1.000" Stretch="Fill" TileMode="Tile">
+                                            <VisualBrush.Visual>
+                                                <Canvas Width="1" Height="1" ClipToBounds="True">
+                                                    <Path StrokeThickness="1" Data="M0.000,1.000L0.000,0.000 1.000,0.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="1,0" EndPoint="0,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="White" Offset="0"/>
+                                                                <GradientStop Color="#FFB8E6EF" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                    <Path StrokeThickness="1" Data="M0.000,1.000L1.000,1.000 1.000,0.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="White" Offset="0"/>
+                                                                <GradientStop Color="#FFB8E6EF" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                </Canvas>
+                                            </VisualBrush.Visual>
+                                        </VisualBrush>
+                                    </Path.Fill>
+                                </Path>
+                                <Path Stroke="#FF295687" StrokeThickness="0.375" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M4.890,585.890L0.000,588.690 11.270,595.280 16.120,592.470 4.850,585.880"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_39" RenderTransform="1,0,0,1,40.2533988952637,-29.2282009124756">
+                                <Path StrokeThickness="1" Data="M1.930,589.620L1.900,589.720 0.000,584.500A39.851,39.851,0.000,0,1,0.630,577.600A3.732,3.732,0.000,0,1,6.060,577.460A12.005,12.005,0.000,0,1,12.830,591.070L12.530,595.280 1.930,589.620z">
+                                    <Path.Fill>
+                                        <VisualBrush ViewportUnits="RelativeToBoundingBox" Viewport="0.000,0.000,1.000,1.000" Stretch="Fill" TileMode="Tile">
+                                            <VisualBrush.Visual>
+                                                <Canvas Width="1" Height="1" ClipToBounds="True">
+                                                    <Path StrokeThickness="1" Data="M0.000,1.000L0.000,0.000 1.000,0.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,1" EndPoint="0,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="#FFE3F5F9" Offset="0"/>
+                                                                <GradientStop Color="#FF7BB4D2" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                    <Path StrokeThickness="1" Data="M0.000,1.000L1.000,1.000 1.000,0.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="#FFE3F5F9" Offset="0"/>
+                                                                <GradientStop Color="#FF7BB4D2" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                </Canvas>
+                                            </VisualBrush.Visual>
+                                        </VisualBrush>
+                                    </Path.Fill>
+                                </Path>
+                                <Path StrokeThickness="1" Data="M1.930,589.620L1.900,589.720 0.000,584.500A39.851,39.851,0.000,0,1,0.630,577.600A3.732,3.732,0.000,0,1,6.060,577.460A12.005,12.005,0.000,0,1,12.830,591.070L12.530,595.280"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_40" RenderTransform="1,0,0,1,41.5993995666504,-40.2346992492676">
+                                <Path StrokeThickness="1" Data="M10.490,595.280A10.432,10.432,-180.000,0,0,7.090,590.420A8.157,8.157,-180.000,0,0,0.000,587.830L4.730,585.240A8.158,8.158,0.000,0,1,11.820,587.830A10.474,10.474,0.000,0,1,15.190,592.590L10.490,595.280z">
+                                    <Path.Fill>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                            <GradientStop Color="#FFF7F3E8" Offset="0"/>
+                                            <GradientStop Color="#FFB8E6EF" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                                <Path StrokeThickness="1" Data="M10.490,595.280A10.432,10.432,-180.000,0,0,7.090,590.420A8.157,8.157,-180.000,0,0,0.000,587.830L4.730,585.240A8.158,8.158,0.000,0,1,11.820,587.830A10.474,10.474,0.000,0,1,15.190,592.590"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_41" RenderTransform="1,0,0,1,52.0900993347168,-29.3927001953125">
+                                <Path StrokeThickness="1" Data="M4.700,581.740A8.495,8.495,0.000,0,1,5.060,583.500A52.856,52.856,0.000,0,1,5.330,592.400A15.669,15.669,0.000,0,1,0.860,595.280A1061.860,1061.860,-180.000,0,0,0.330,586.100A8.404,8.404,-180.000,0,0,0.020,584.520L0.000,584.430A3.802,3.802,0.000,0,1,4.690,581.730L4.700,581.740z">
+                                    <Path.Fill>
+                                        <VisualBrush ViewportUnits="RelativeToBoundingBox" Viewport="0.000,0.000,1.000,1.000" Stretch="Fill" TileMode="Tile">
+                                            <VisualBrush.Visual>
+                                                <Canvas Width="1" Height="1" ClipToBounds="True">
+                                                    <Path StrokeThickness="1" Data="M0.000,0.000L0.000,1.000 1.000,1.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="#FFB8E6EF" Offset="0"/>
+                                                                <GradientStop Color="#FF7BB4D2" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                    <Path StrokeThickness="1" Data="M0.000,0.000L1.000,0.000 1.000,1.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="#FFB8E6EF" Offset="0"/>
+                                                                <GradientStop Color="#FF7BB4D2" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                </Canvas>
+                                            </VisualBrush.Visual>
+                                        </VisualBrush>
+                                    </Path.Fill>
+                                </Path>
+                                <Path StrokeThickness="1" Data="M4.700,581.740A8.495,8.495,0.000,0,1,5.060,583.500A52.856,52.856,0.000,0,1,5.330,592.400A15.669,15.669,0.000,0,1,0.860,595.280A1061.860,1061.860,-180.000,0,0,0.330,586.100A8.404,8.404,-180.000,0,0,0.020,584.520L0.000,584.430A3.802,3.802,0.000,0,1,4.690,581.730"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_42" RenderTransform="1,0,0,1,52.4370002746582,-26.9067993164063">
+                                <Path Fill="#FF658EB8" StrokeThickness="1" Data="M0.000,593.070L4.260,590.650 3.910,595.280 0.000,593.070z"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_43" RenderTransform="1,0,0,1,39.6935997009277,-24.7801990509033">
+                                <Path StrokeThickness="1" Data="M6.380,591.460A2.736,2.736,0.000,0,1,4.280,594.670A2.918,2.918,0.000,0,1,0.470,593.650A2.738,2.738,0.000,0,1,2.580,590.430A2.917,2.917,0.000,0,1,6.380,591.460z">
+                                    <Path.Fill>
+                                        <RadialGradientBrush Center="0,1" RadiusX="1" RadiusY="1" GradientOrigin="0,1" MappingMode="RelativeToBoundingBox">
+                                            <GradientStop Color="White" Offset="0"/>
+                                            <GradientStop Color="#FFDA8C36" Offset="1"/>
+                                        </RadialGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                            </Canvas>
+                            <Canvas Name="Sheet_44" RenderTransform="1,0,0,1,45.7994003295898,-47.3978996276855">
+                                <Path StrokeThickness="1" Data="M0.140,592.880L0.160,594.020A2.035,2.035,-180.000,0,0,2.550,595.030A5.695,5.695,-180.000,0,0,5.680,594.640L5.650,592.480A5.069,5.069,0.000,0,1,0.230,592.830L0.140,592.880z">
+                                    <Path.Fill>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                            <GradientStop Color="#FF7BB4D2" Offset="0"/>
+                                            <GradientStop Color="#FF658EB8" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                                <Path StrokeThickness="1" Data="M0.140,592.880L0.160,594.020A2.035,2.035,-180.000,0,0,2.550,595.030A5.695,5.695,-180.000,0,0,5.680,594.640L5.650,592.480A5.069,5.069,0.000,0,1,0.230,592.830"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_45" RenderTransform="1,0,0,1,45.3688011169434,-25.2898006439209">
+                                <Path Fill="#FF7BB4D2" StrokeThickness="1" Data="M7.530,587.270L0.340,591.400A2.046,2.046,0.000,0,1,0.000,594.360A1.852,1.852,-180.000,0,0,2.710,594.040L7.640,591.150 7.530,587.270z"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_46" RenderTransform="1,0,0,1,36.1254005432129,-31.7469005584717">
+                                <Path Fill="#FF7BB4D2" StrokeThickness="1" Data="M0.270,595.280L6.280,591.910 6.110,588.060 0.000,591.420 0.270,595.280z"/>
+                                <Path StrokeThickness="1" Data="M0.270,595.280L6.280,591.910 6.110,588.060 0.000,591.420"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_47" RenderTransform="1,0,0,1,43.6559982299805,-48.9421997070313">
+                                <Path StrokeThickness="1" Data="M9.880,589.570A5.366,5.366,0.000,0,1,4.940,595.280A5.366,5.366,0.000,0,1,0.000,589.570A5.368,5.368,0.000,0,1,4.940,583.860A5.368,5.368,0.000,0,1,9.880,589.570L-2.470,581.010 9.880,589.570z">
+                                    <Path.Fill>
+                                        <RadialGradientBrush Center="0.5,0.5" RadiusX="0.5" RadiusY="0.5" GradientOrigin="0.5,0.5" MappingMode="RelativeToBoundingBox">
+                                            <GradientStop Color="White" Offset="0"/>
+                                            <GradientStop Color="#FFDA8C36" Offset="1"/>
+                                        </RadialGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                                <Path Stroke="#FFD75139" StrokeThickness="0.375" StrokeMiterLimit="3" Data="M9.880,589.570A5.366,5.366,0.000,0,1,4.940,595.280A5.366,5.366,0.000,0,1,0.000,589.570A5.368,5.368,0.000,0,1,4.940,583.860A5.368,5.368,0.000,0,1,9.880,589.570z"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_48" RenderTransform="1,0,0,1,35.9850997924805,-29.146900177002">
+                                <Path Fill="White" StrokeThickness="1" Data="M0.000,586.790A1387.350,1387.350,-180.000,0,0,4.360,584.330L6.240,585.430 0.170,588.880 0.000,586.790z M16.770,591.200L9.730,595.280A2.450,2.450,-180.000,0,0,7.550,594.540A1.422,1.422,0.000,0,1,8.310,593.840A395.138,395.138,-180.000,0,0,14.890,590.100L16.770,591.200z"/>
+                                <Path StrokeThickness="1" Data="M0.000,586.790A1387.350,1387.350,-180.000,0,0,4.360,584.330L6.240,585.430 0.170,588.880 M16.770,591.200L9.730,595.280A2.450,2.450,-180.000,0,0,7.550,594.540A1.422,1.422,0.000,0,1,8.310,593.840A395.138,395.138,-180.000,0,0,14.890,590.100L16.770,591.200"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_49" RenderTransform="1,0,0,1,35.9687004089355,-25.0438995361328">
+                                <Path StrokeThickness="1" Data="M6.340,585.380L6.160,578.070 6.340,585.380z M0.430,588.570L6.390,585.340 0.430,588.570z M14.860,582.870L14.860,585.990 8.960,589.380A4.121,4.121,-180.000,0,0,7.610,590.370A4.179,4.179,-180.000,0,0,4.370,592.200A2.238,2.238,-180.000,0,0,7.490,595.140A4.748,4.748,-180.000,0,0,9.380,594.130A3.170,3.170,-180.000,0,0,13.070,593.280L20.730,588.780A3.171,3.171,-180.000,0,0,21.610,585.980A605.106,605.106,-180.000,0,0,21.210,579.200A9.847,9.847,-180.000,0,0,17.480,572.680A18.392,18.392,-180.000,0,0,15.510,571.240L15.480,570.370A5.687,5.687,-180.000,0,0,17.580,565.810A5.358,5.358,-180.000,0,0,12.630,559.960A5.290,5.290,-180.000,0,0,7.730,565.810A6.048,6.048,-180.000,0,0,9.760,570.430L5.660,572.680A2.741,2.741,-180.000,0,0,4.510,575.070L4.290,580.250A89.912,89.912,-180.000,0,0,0.000,582.630L14.860,582.870z"/>
+                                <Path Stroke="#FF295687" StrokeThickness="0.375" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M6.340,585.380L6.160,578.070 M0.430,588.570L6.390,585.340 M14.860,582.870L14.860,585.990 8.960,589.380A4.121,4.121,-180.000,0,0,7.610,590.370A4.179,4.179,-180.000,0,0,4.370,592.200A2.238,2.238,-180.000,0,0,7.490,595.140A4.748,4.748,-180.000,0,0,9.380,594.130A3.170,3.170,-180.000,0,0,13.070,593.280L20.730,588.780A3.171,3.171,-180.000,0,0,21.610,585.980A605.106,605.106,-180.000,0,0,21.210,579.200A9.847,9.847,-180.000,0,0,17.480,572.680A18.392,18.392,-180.000,0,0,15.510,571.240L15.480,570.370A5.687,5.687,-180.000,0,0,17.580,565.810A5.358,5.358,-180.000,0,0,12.630,559.960A5.290,5.290,-180.000,0,0,7.730,565.810A6.048,6.048,-180.000,0,0,9.760,570.430L5.660,572.680A2.741,2.741,-180.000,0,0,4.510,575.070L4.290,580.250A89.912,89.912,-180.000,0,0,0.000,582.630"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_50" RenderTransform="1,0,0,1,30.0737991333008,-21.5284004211426">
+                                <Path Fill="#FF295687" Stroke="#FF295687" StrokeThickness="0.218" StrokeMiterLimit="3" Data="M5.640,590.990L0.000,587.630 0.000,588.560 5.710,591.960 5.770,592.850 6.480,592.420 11.260,595.270 17.000,591.960 16.120,591.480 11.270,594.340 6.740,591.640 5.740,576.960 4.590,577.610 5.640,590.990z"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_51" RenderTransform="1,0,0,1,22.8082008361816,-39.190601348877">
+                                <Path StrokeThickness="1" Data="M11.850,595.280L0.000,588.710 1.140,588.150 13.010,594.620 11.850,595.280z">
+                                    <Path.Fill>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                            <GradientStop Color="#FFF7F3E8" Offset="0"/>
+                                            <GradientStop Color="#FFB8E6EF" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                            </Canvas>
+                            <Canvas Name="Sheet_52" RenderTransform="1,0,0,1,23.0739994049072,-21.8010005950928">
+                                <Path Stroke="#FF295687" StrokeThickness="0.375" StrokeMiterLimit="3" Data="M11.820,592.620A5.409,5.409,0.000,0,1,5.910,595.280A5.404,5.404,0.000,0,1,0.000,592.620A5.405,5.405,0.000,0,1,5.910,589.960A5.410,5.410,0.000,0,1,11.820,592.620z">
+                                    <Path.Fill>
+                                        <RadialGradientBrush Center="0,0" RadiusX="1" RadiusY="1" GradientOrigin="0,0" MappingMode="RelativeToBoundingBox">
+                                            <GradientStop Color="White" Offset="0"/>
+                                            <GradientStop Color="#FF7BB4D2" Offset="1"/>
+                                        </RadialGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                            </Canvas>
+                            <Canvas Name="Sheet_53" RenderTransform="1,0,0,1,22.8145008087158,-23.9564990997314">
+                                <Path Stroke="#FF295687" StrokeThickness="0.375" StrokeMiterLimit="3" Data="M0.000,573.460L1.000,588.630 13.030,595.280 11.850,579.950 0.000,573.460z">
+                                    <Path.Fill>
+                                        <VisualBrush ViewportUnits="RelativeToBoundingBox" Viewport="0.000,0.000,1.000,1.000" Stretch="Fill" TileMode="Tile">
+                                            <VisualBrush.Visual>
+                                                <Canvas Width="1" Height="1" ClipToBounds="True">
+                                                    <Path StrokeThickness="1" Data="M0.000,0.000L0.000,1.000 1.000,1.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="White" Offset="0"/>
+                                                                <GradientStop Color="#FF7BB4D2" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                    <Path StrokeThickness="1" Data="M0.000,0.000L1.000,0.000 1.000,1.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="White" Offset="0"/>
+                                                                <GradientStop Color="#FF7BB4D2" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                </Canvas>
+                                            </VisualBrush.Visual>
+                                        </VisualBrush>
+                                    </Path.Fill>
+                                </Path>
+                            </Canvas>
+                            <Canvas Name="Sheet_54" RenderTransform="1,0,0,1,24.2812004089355,-22.1650009155273">
+                                <Path Stroke="#FF295687" StrokeThickness="0.375" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M3.300,584.210A22.016,22.016,-180.000,0,0,0.000,594.520L1.920,595.280A22.024,22.024,0.000,0,1,5.220,584.970L3.300,584.210z">
+                                    <Path.Fill>
+                                        <VisualBrush ViewportUnits="RelativeToBoundingBox" Viewport="0.000,0.000,1.000,1.000" Stretch="Fill" TileMode="Tile">
+                                            <VisualBrush.Visual>
+                                                <Canvas Width="1" Height="1" ClipToBounds="True">
+                                                    <Path StrokeThickness="1" Data="M0.000,1.000L0.000,0.000 1.000,0.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="1,0" EndPoint="0,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="White" Offset="0"/>
+                                                                <GradientStop Color="#FFB8E6EF" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                    <Path StrokeThickness="1" Data="M0.000,1.000L1.000,1.000 1.000,0.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="White" Offset="0"/>
+                                                                <GradientStop Color="#FFB8E6EF" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                </Canvas>
+                                            </VisualBrush.Visual>
+                                        </VisualBrush>
+                                    </Path.Fill>
+                                </Path>
+                            </Canvas>
+                            <Canvas Name="Sheet_55" RenderTransform="1,0,0,1,23.0650997161865,-20.722900390625">
+                                <Path Fill="#FF295687" Stroke="#FF295687" StrokeThickness="0.373" StrokeMiterLimit="3" Data="M6.430,583.530L7.080,591.670 3.180,593.890A22.525,22.525,0.000,0,1,6.430,583.530z M11.820,591.570A5.408,5.408,0.000,0,1,5.910,594.230A5.405,5.405,0.000,0,1,0.000,591.570L0.000,592.620A5.404,5.404,-180.000,0,0,5.910,595.280A5.409,5.409,-180.000,0,0,11.820,592.620L11.820,591.570z"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_56" RenderTransform="1,0,0,1,8.43307018280029,-10.5100002288818">
+                                <Path Stroke="Black" StrokeThickness="0.72" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M37.300,555.900L33.440,557.960A2.378,2.378,-180.000,0,0,32.460,558.880A26.628,26.628,-180.000,0,0,31.820,565.720A55.544,55.544,-180.000,0,0,27.550,568.150L27.520,567.150 27.380,565.940 15.510,559.470 14.380,560.030 14.880,567.550 0.000,576.010 0.000,576.870 32.740,595.280 54.000,583.190 54.000,582.320 50.890,580.560 51.530,565.810 48.690,564.180A11.232,11.232,-180.000,0,0,43.050,556.710A33.346,33.346,0.000,0,1,43.020,555.830A5.817,5.817,-180.000,0,0,45.110,550.910A5.251,5.251,-180.000,0,0,40.160,545.430A5.160,5.160,-180.000,0,0,35.230,550.830A6.048,6.048,-180.000,0,0,37.300,555.900z"/>
+                            </Canvas>
+                        </Canvas>
+                        <Canvas Name="User2" RenderTransform="1,0,0,1,320.315002441406,-36.2020988464355">
+                            <Canvas Name="Sheet_58" RenderTransform="1,0,0,1,8.43307018280029,-10.5100002288818">
+                                <Path Fill="#00000000" StrokeThickness="1" Data="M37.300,555.900L33.440,557.960A2.277,2.277,-180.000,0,0,32.460,558.880A28.036,28.036,-180.000,0,0,31.820,565.720A37.194,37.194,-180.000,0,0,27.550,568.150L27.520,567.150 27.380,565.940 15.510,559.470 14.380,560.030 14.880,567.550 0.000,576.010 0.000,576.870 32.740,595.280 54.000,583.190 54.000,582.320 50.890,580.560 51.530,565.810 48.690,564.180A10.672,10.672,-180.000,0,0,43.050,556.710A32.029,32.029,0.000,0,1,43.020,555.830A5.806,5.806,-180.000,0,0,45.110,550.910A5.178,5.178,-180.000,0,0,40.160,545.430A5.145,5.145,-180.000,0,0,35.230,550.830A5.906,5.906,-180.000,0,0,37.300,555.900z"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_59" RenderTransform="1,0,0,1,56.3432006835938,-25.2224998474121">
+                                <Path Fill="#FFCC6633" StrokeThickness="1" Data="M0.000,593.590L0.310,578.640 3.620,580.520 2.980,595.280 1.450,594.410 0.000,593.590z"/>
+                                <Path StrokeThickness="1" Data="M0.000,593.590L0.310,578.640 3.620,580.520 2.980,595.280 1.450,594.410"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_60" RenderTransform="1,0,0,1,57.1185989379883,-39.3051986694336">
+                                <Path StrokeThickness="1" Data="M0.000,592.980L2.840,594.600 1.290,595.280 0.020,594.500 0.000,592.980z">
+                                    <Path.Fill>
+                                        <LinearGradientBrush StartPoint="0,1" EndPoint="0,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                            <GradientStop Color="#FFF6F8B0" Offset="0"/>
+                                            <GradientStop Color="#FFDAB971" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                                <Path StrokeThickness="1" Data="M0.000,592.980L2.840,594.600 1.290,595.280 0.020,594.500"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_61" RenderTransform="1,0,0,1,8.43307018280029,-11.3767004013062">
+                                <Path StrokeThickness="1" Data="M0.000,576.880L21.360,564.740 54.000,583.190 32.760,595.280 0.000,576.880z">
+                                    <Path.Fill>
+                                        <RadialGradientBrush Center="0,0" RadiusX="1" RadiusY="1" GradientOrigin="0,0" MappingMode="RelativeToBoundingBox">
+                                            <GradientStop Color="#FFF6F8B0" Offset="0"/>
+                                            <GradientStop Color="#FFDAB971" Offset="1"/>
+                                        </RadialGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                            </Canvas>
+                            <Canvas Name="Sheet_62" RenderTransform="1,0,0,1,8.43307018280029,-10.5100002288818">
+                                <Path Fill="#FFCC6633" Stroke="#FFCC6633" StrokeThickness="0.218" StrokeMiterLimit="3" Data="M0.000,576.870L32.740,595.280 32.760,594.410 0.000,576.010 0.000,576.870z M51.120,583.940L32.760,594.410 32.760,595.270 54.000,583.190 54.000,582.320 51.120,583.940z"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_63" RenderTransform="1,0,0,1,30.0737991333008,-22.4288997650146">
+                                <Path StrokeThickness="1" Data="M4.890,585.890L0.000,588.690 11.270,595.280 16.120,592.470 4.850,585.880 4.890,585.890z">
+                                    <Path.Fill>
+                                        <VisualBrush ViewportUnits="RelativeToBoundingBox" Viewport="0.000,0.000,1.000,1.000" Stretch="Fill" TileMode="Tile">
+                                            <VisualBrush.Visual>
+                                                <Canvas Width="1" Height="1" ClipToBounds="True">
+                                                    <Path StrokeThickness="1" Data="M0.000,1.000L0.000,0.000 1.000,0.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="1,0" EndPoint="0,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="White" Offset="0"/>
+                                                                <GradientStop Color="#FFB8E6EF" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                    <Path StrokeThickness="1" Data="M0.000,1.000L1.000,1.000 1.000,0.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="White" Offset="0"/>
+                                                                <GradientStop Color="#FFB8E6EF" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                </Canvas>
+                                            </VisualBrush.Visual>
+                                        </VisualBrush>
+                                    </Path.Fill>
+                                </Path>
+                                <Path Stroke="#FF295687" StrokeThickness="0.375" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M4.890,585.890L0.000,588.690 11.270,595.280 16.120,592.470 4.850,585.880"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_64" RenderTransform="1,0,0,1,40.2533988952637,-29.2282009124756">
+                                <Path StrokeThickness="1" Data="M1.930,589.620L1.900,589.720 0.000,584.500A39.851,39.851,0.000,0,1,0.630,577.600A3.732,3.732,0.000,0,1,6.060,577.460A12.005,12.005,0.000,0,1,12.830,591.070L12.530,595.280 1.930,589.620z">
+                                    <Path.Fill>
+                                        <VisualBrush ViewportUnits="RelativeToBoundingBox" Viewport="0.000,0.000,1.000,1.000" Stretch="Fill" TileMode="Tile">
+                                            <VisualBrush.Visual>
+                                                <Canvas Width="1" Height="1" ClipToBounds="True">
+                                                    <Path StrokeThickness="1" Data="M0.000,1.000L0.000,0.000 1.000,0.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,1" EndPoint="0,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="#FFE3F5F9" Offset="0"/>
+                                                                <GradientStop Color="#FF7BB4D2" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                    <Path StrokeThickness="1" Data="M0.000,1.000L1.000,1.000 1.000,0.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="#FFE3F5F9" Offset="0"/>
+                                                                <GradientStop Color="#FF7BB4D2" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                </Canvas>
+                                            </VisualBrush.Visual>
+                                        </VisualBrush>
+                                    </Path.Fill>
+                                </Path>
+                                <Path StrokeThickness="1" Data="M1.930,589.620L1.900,589.720 0.000,584.500A39.851,39.851,0.000,0,1,0.630,577.600A3.732,3.732,0.000,0,1,6.060,577.460A12.005,12.005,0.000,0,1,12.830,591.070L12.530,595.280"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_65" RenderTransform="1,0,0,1,41.5993995666504,-40.2346992492676">
+                                <Path StrokeThickness="1" Data="M10.490,595.280A10.432,10.432,-180.000,0,0,7.090,590.420A8.157,8.157,-180.000,0,0,0.000,587.830L4.730,585.240A8.158,8.158,0.000,0,1,11.820,587.830A10.474,10.474,0.000,0,1,15.190,592.590L10.490,595.280z">
+                                    <Path.Fill>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                            <GradientStop Color="#FFF7F3E8" Offset="0"/>
+                                            <GradientStop Color="#FFB8E6EF" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                                <Path StrokeThickness="1" Data="M10.490,595.280A10.432,10.432,-180.000,0,0,7.090,590.420A8.157,8.157,-180.000,0,0,0.000,587.830L4.730,585.240A8.158,8.158,0.000,0,1,11.820,587.830A10.474,10.474,0.000,0,1,15.190,592.590"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_66" RenderTransform="1,0,0,1,52.0900993347168,-29.3927001953125">
+                                <Path StrokeThickness="1" Data="M4.700,581.740A8.495,8.495,0.000,0,1,5.060,583.500A52.856,52.856,0.000,0,1,5.330,592.400A15.669,15.669,0.000,0,1,0.860,595.280A1061.860,1061.860,-180.000,0,0,0.330,586.100A8.404,8.404,-180.000,0,0,0.020,584.520L0.000,584.430A3.802,3.802,0.000,0,1,4.690,581.730L4.700,581.740z">
+                                    <Path.Fill>
+                                        <VisualBrush ViewportUnits="RelativeToBoundingBox" Viewport="0.000,0.000,1.000,1.000" Stretch="Fill" TileMode="Tile">
+                                            <VisualBrush.Visual>
+                                                <Canvas Width="1" Height="1" ClipToBounds="True">
+                                                    <Path StrokeThickness="1" Data="M0.000,0.000L0.000,1.000 1.000,1.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="#FFB8E6EF" Offset="0"/>
+                                                                <GradientStop Color="#FF7BB4D2" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                    <Path StrokeThickness="1" Data="M0.000,0.000L1.000,0.000 1.000,1.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="#FFB8E6EF" Offset="0"/>
+                                                                <GradientStop Color="#FF7BB4D2" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                </Canvas>
+                                            </VisualBrush.Visual>
+                                        </VisualBrush>
+                                    </Path.Fill>
+                                </Path>
+                                <Path StrokeThickness="1" Data="M4.700,581.740A8.495,8.495,0.000,0,1,5.060,583.500A52.856,52.856,0.000,0,1,5.330,592.400A15.669,15.669,0.000,0,1,0.860,595.280A1061.860,1061.860,-180.000,0,0,0.330,586.100A8.404,8.404,-180.000,0,0,0.020,584.520L0.000,584.430A3.802,3.802,0.000,0,1,4.690,581.730"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_67" RenderTransform="1,0,0,1,52.4370002746582,-26.9067993164063">
+                                <Path Fill="#FF658EB8" StrokeThickness="1" Data="M0.000,593.070L4.260,590.650 3.910,595.280 0.000,593.070z"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_68" RenderTransform="1,0,0,1,39.6935997009277,-24.7801990509033">
+                                <Path StrokeThickness="1" Data="M6.380,591.460A2.736,2.736,0.000,0,1,4.280,594.670A2.918,2.918,0.000,0,1,0.470,593.650A2.738,2.738,0.000,0,1,2.580,590.430A2.917,2.917,0.000,0,1,6.380,591.460z">
+                                    <Path.Fill>
+                                        <RadialGradientBrush Center="0,1" RadiusX="1" RadiusY="1" GradientOrigin="0,1" MappingMode="RelativeToBoundingBox">
+                                            <GradientStop Color="White" Offset="0"/>
+                                            <GradientStop Color="#FFDA8C36" Offset="1"/>
+                                        </RadialGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                            </Canvas>
+                            <Canvas Name="Sheet_69" RenderTransform="1,0,0,1,45.7994003295898,-47.3978996276855">
+                                <Path StrokeThickness="1" Data="M0.140,592.880L0.160,594.020A2.035,2.035,-180.000,0,0,2.550,595.030A5.695,5.695,-180.000,0,0,5.680,594.640L5.650,592.480A5.069,5.069,0.000,0,1,0.230,592.830L0.140,592.880z">
+                                    <Path.Fill>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                            <GradientStop Color="#FF7BB4D2" Offset="0"/>
+                                            <GradientStop Color="#FF658EB8" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                                <Path StrokeThickness="1" Data="M0.140,592.880L0.160,594.020A2.035,2.035,-180.000,0,0,2.550,595.030A5.695,5.695,-180.000,0,0,5.680,594.640L5.650,592.480A5.069,5.069,0.000,0,1,0.230,592.830"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_70" RenderTransform="1,0,0,1,45.3688011169434,-25.2898006439209">
+                                <Path Fill="#FF7BB4D2" StrokeThickness="1" Data="M7.530,587.270L0.340,591.400A2.046,2.046,0.000,0,1,0.000,594.360A1.852,1.852,-180.000,0,0,2.710,594.040L7.640,591.150 7.530,587.270z"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_71" RenderTransform="1,0,0,1,36.1254005432129,-31.7469005584717">
+                                <Path Fill="#FF7BB4D2" StrokeThickness="1" Data="M0.270,595.280L6.280,591.910 6.110,588.060 0.000,591.420 0.270,595.280z"/>
+                                <Path StrokeThickness="1" Data="M0.270,595.280L6.280,591.910 6.110,588.060 0.000,591.420"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_72" RenderTransform="1,0,0,1,43.6559982299805,-48.9421997070313">
+                                <Path StrokeThickness="1" Data="M9.880,589.570A5.366,5.366,0.000,0,1,4.940,595.280A5.366,5.366,0.000,0,1,0.000,589.570A5.368,5.368,0.000,0,1,4.940,583.860A5.368,5.368,0.000,0,1,9.880,589.570L-2.470,581.010 9.880,589.570z">
+                                    <Path.Fill>
+                                        <RadialGradientBrush Center="0.5,0.5" RadiusX="0.5" RadiusY="0.5" GradientOrigin="0.5,0.5" MappingMode="RelativeToBoundingBox">
+                                            <GradientStop Color="White" Offset="0"/>
+                                            <GradientStop Color="#FFDA8C36" Offset="1"/>
+                                        </RadialGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                                <Path Stroke="#FFD75139" StrokeThickness="0.375" StrokeMiterLimit="3" Data="M9.880,589.570A5.366,5.366,0.000,0,1,4.940,595.280A5.366,5.366,0.000,0,1,0.000,589.570A5.368,5.368,0.000,0,1,4.940,583.860A5.368,5.368,0.000,0,1,9.880,589.570z"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_73" RenderTransform="1,0,0,1,35.9850997924805,-29.146900177002">
+                                <Path Fill="White" StrokeThickness="1" Data="M0.000,586.790A1387.350,1387.350,-180.000,0,0,4.360,584.330L6.240,585.430 0.170,588.880 0.000,586.790z M16.770,591.200L9.730,595.280A2.450,2.450,-180.000,0,0,7.550,594.540A1.422,1.422,0.000,0,1,8.310,593.840A395.138,395.138,-180.000,0,0,14.890,590.100L16.770,591.200z"/>
+                                <Path StrokeThickness="1" Data="M0.000,586.790A1387.350,1387.350,-180.000,0,0,4.360,584.330L6.240,585.430 0.170,588.880 M16.770,591.200L9.730,595.280A2.450,2.450,-180.000,0,0,7.550,594.540A1.422,1.422,0.000,0,1,8.310,593.840A395.138,395.138,-180.000,0,0,14.890,590.100L16.770,591.200"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_74" RenderTransform="1,0,0,1,35.9687004089355,-25.0438995361328">
+                                <Path StrokeThickness="1" Data="M6.340,585.380L6.160,578.070 6.340,585.380z M0.430,588.570L6.390,585.340 0.430,588.570z M14.860,582.870L14.860,585.990 8.960,589.380A4.121,4.121,-180.000,0,0,7.610,590.370A4.179,4.179,-180.000,0,0,4.370,592.200A2.238,2.238,-180.000,0,0,7.490,595.140A4.748,4.748,-180.000,0,0,9.380,594.130A3.170,3.170,-180.000,0,0,13.070,593.280L20.730,588.780A3.171,3.171,-180.000,0,0,21.610,585.980A605.106,605.106,-180.000,0,0,21.210,579.200A9.847,9.847,-180.000,0,0,17.480,572.680A18.392,18.392,-180.000,0,0,15.510,571.240L15.480,570.370A5.687,5.687,-180.000,0,0,17.580,565.810A5.358,5.358,-180.000,0,0,12.630,559.960A5.290,5.290,-180.000,0,0,7.730,565.810A6.048,6.048,-180.000,0,0,9.760,570.430L5.660,572.680A2.741,2.741,-180.000,0,0,4.510,575.070L4.290,580.250A89.912,89.912,-180.000,0,0,0.000,582.630L14.860,582.870z"/>
+                                <Path Stroke="#FF295687" StrokeThickness="0.375" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M6.340,585.380L6.160,578.070 M0.430,588.570L6.390,585.340 M14.860,582.870L14.860,585.990 8.960,589.380A4.121,4.121,-180.000,0,0,7.610,590.370A4.179,4.179,-180.000,0,0,4.370,592.200A2.238,2.238,-180.000,0,0,7.490,595.140A4.748,4.748,-180.000,0,0,9.380,594.130A3.170,3.170,-180.000,0,0,13.070,593.280L20.730,588.780A3.171,3.171,-180.000,0,0,21.610,585.980A605.106,605.106,-180.000,0,0,21.210,579.200A9.847,9.847,-180.000,0,0,17.480,572.680A18.392,18.392,-180.000,0,0,15.510,571.240L15.480,570.370A5.687,5.687,-180.000,0,0,17.580,565.810A5.358,5.358,-180.000,0,0,12.630,559.960A5.290,5.290,-180.000,0,0,7.730,565.810A6.048,6.048,-180.000,0,0,9.760,570.430L5.660,572.680A2.741,2.741,-180.000,0,0,4.510,575.070L4.290,580.250A89.912,89.912,-180.000,0,0,0.000,582.630"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_75" RenderTransform="1,0,0,1,30.0737991333008,-21.5284004211426">
+                                <Path Fill="#FF295687" Stroke="#FF295687" StrokeThickness="0.218" StrokeMiterLimit="3" Data="M5.640,590.990L0.000,587.630 0.000,588.560 5.710,591.960 5.770,592.850 6.480,592.420 11.260,595.270 17.000,591.960 16.120,591.480 11.270,594.340 6.740,591.640 5.740,576.960 4.590,577.610 5.640,590.990z"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_76" RenderTransform="1,0,0,1,22.8082008361816,-39.190601348877">
+                                <Path StrokeThickness="1" Data="M11.850,595.280L0.000,588.710 1.140,588.150 13.010,594.620 11.850,595.280z">
+                                    <Path.Fill>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                            <GradientStop Color="#FFF7F3E8" Offset="0"/>
+                                            <GradientStop Color="#FFB8E6EF" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                            </Canvas>
+                            <Canvas Name="Sheet_77" RenderTransform="1,0,0,1,23.0739994049072,-21.8010005950928">
+                                <Path Stroke="#FF295687" StrokeThickness="0.375" StrokeMiterLimit="3" Data="M11.820,592.620A5.409,5.409,0.000,0,1,5.910,595.280A5.404,5.404,0.000,0,1,0.000,592.620A5.405,5.405,0.000,0,1,5.910,589.960A5.410,5.410,0.000,0,1,11.820,592.620z">
+                                    <Path.Fill>
+                                        <RadialGradientBrush Center="0,0" RadiusX="1" RadiusY="1" GradientOrigin="0,0" MappingMode="RelativeToBoundingBox">
+                                            <GradientStop Color="White" Offset="0"/>
+                                            <GradientStop Color="#FF7BB4D2" Offset="1"/>
+                                        </RadialGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                            </Canvas>
+                            <Canvas Name="Sheet_78" RenderTransform="1,0,0,1,22.8145008087158,-23.9564990997314">
+                                <Path Stroke="#FF295687" StrokeThickness="0.375" StrokeMiterLimit="3" Data="M0.000,573.460L1.000,588.630 13.030,595.280 11.850,579.950 0.000,573.460z">
+                                    <Path.Fill>
+                                        <VisualBrush ViewportUnits="RelativeToBoundingBox" Viewport="0.000,0.000,1.000,1.000" Stretch="Fill" TileMode="Tile">
+                                            <VisualBrush.Visual>
+                                                <Canvas Width="1" Height="1" ClipToBounds="True">
+                                                    <Path StrokeThickness="1" Data="M0.000,0.000L0.000,1.000 1.000,1.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="White" Offset="0"/>
+                                                                <GradientStop Color="#FF7BB4D2" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                    <Path StrokeThickness="1" Data="M0.000,0.000L1.000,0.000 1.000,1.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="White" Offset="0"/>
+                                                                <GradientStop Color="#FF7BB4D2" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                </Canvas>
+                                            </VisualBrush.Visual>
+                                        </VisualBrush>
+                                    </Path.Fill>
+                                </Path>
+                            </Canvas>
+                            <Canvas Name="Sheet_79" RenderTransform="1,0,0,1,24.2812004089355,-22.1650009155273">
+                                <Path Stroke="#FF295687" StrokeThickness="0.375" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M3.300,584.210A22.016,22.016,-180.000,0,0,0.000,594.520L1.920,595.280A22.024,22.024,0.000,0,1,5.220,584.970L3.300,584.210z">
+                                    <Path.Fill>
+                                        <VisualBrush ViewportUnits="RelativeToBoundingBox" Viewport="0.000,0.000,1.000,1.000" Stretch="Fill" TileMode="Tile">
+                                            <VisualBrush.Visual>
+                                                <Canvas Width="1" Height="1" ClipToBounds="True">
+                                                    <Path StrokeThickness="1" Data="M0.000,1.000L0.000,0.000 1.000,0.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="1,0" EndPoint="0,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="White" Offset="0"/>
+                                                                <GradientStop Color="#FFB8E6EF" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                    <Path StrokeThickness="1" Data="M0.000,1.000L1.000,1.000 1.000,0.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="White" Offset="0"/>
+                                                                <GradientStop Color="#FFB8E6EF" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                </Canvas>
+                                            </VisualBrush.Visual>
+                                        </VisualBrush>
+                                    </Path.Fill>
+                                </Path>
+                            </Canvas>
+                            <Canvas Name="Sheet_80" RenderTransform="1,0,0,1,23.0650997161865,-20.722900390625">
+                                <Path Fill="#FF295687" Stroke="#FF295687" StrokeThickness="0.373" StrokeMiterLimit="3" Data="M6.430,583.530L7.080,591.670 3.180,593.890A22.525,22.525,0.000,0,1,6.430,583.530z M11.820,591.570A5.408,5.408,0.000,0,1,5.910,594.230A5.405,5.405,0.000,0,1,0.000,591.570L0.000,592.620A5.404,5.404,-180.000,0,0,5.910,595.280A5.409,5.409,-180.000,0,0,11.820,592.620L11.820,591.570z"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_81" RenderTransform="1,0,0,1,8.43307018280029,-10.5100002288818">
+                                <Path Stroke="Black" StrokeThickness="0.72" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M37.300,555.900L33.440,557.960A2.378,2.378,-180.000,0,0,32.460,558.880A26.628,26.628,-180.000,0,0,31.820,565.720A55.544,55.544,-180.000,0,0,27.550,568.150L27.520,567.150 27.380,565.940 15.510,559.470 14.380,560.030 14.880,567.550 0.000,576.010 0.000,576.870 32.740,595.280 54.000,583.190 54.000,582.320 50.890,580.560 51.530,565.810 48.690,564.180A11.232,11.232,-180.000,0,0,43.050,556.710A33.346,33.346,0.000,0,1,43.020,555.830A5.817,5.817,-180.000,0,0,45.110,550.910A5.251,5.251,-180.000,0,0,40.160,545.430A5.160,5.160,-180.000,0,0,35.230,550.830A6.048,6.048,-180.000,0,0,37.300,555.900z"/>
+                            </Canvas>
+                        </Canvas>
+                        <Canvas Name="User3" RenderTransform="1,0,0,1,453.542999267578,-37.3359985351563">
+                            <Canvas Name="Sheet_83" RenderTransform="1,0,0,1,8.43307018280029,-10.5100002288818">
+                                <Path Fill="#00000000" StrokeThickness="1" Data="M37.300,555.900L33.440,557.960A2.277,2.277,-180.000,0,0,32.460,558.880A28.036,28.036,-180.000,0,0,31.820,565.720A37.194,37.194,-180.000,0,0,27.550,568.150L27.520,567.150 27.380,565.940 15.510,559.470 14.380,560.030 14.880,567.550 0.000,576.010 0.000,576.870 32.740,595.280 54.000,583.190 54.000,582.320 50.890,580.560 51.530,565.810 48.690,564.180A10.672,10.672,-180.000,0,0,43.050,556.710A32.029,32.029,0.000,0,1,43.020,555.830A5.806,5.806,-180.000,0,0,45.110,550.910A5.178,5.178,-180.000,0,0,40.160,545.430A5.145,5.145,-180.000,0,0,35.230,550.830A5.906,5.906,-180.000,0,0,37.300,555.900z"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_84" RenderTransform="1,0,0,1,56.3432006835938,-25.2224998474121">
+                                <Path Fill="#FFCC6633" StrokeThickness="1" Data="M0.000,593.590L0.310,578.640 3.620,580.520 2.980,595.280 1.450,594.410 0.000,593.590z"/>
+                                <Path StrokeThickness="1" Data="M0.000,593.590L0.310,578.640 3.620,580.520 2.980,595.280 1.450,594.410"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_85" RenderTransform="1,0,0,1,57.1185989379883,-39.3051986694336">
+                                <Path StrokeThickness="1" Data="M0.000,592.980L2.840,594.600 1.290,595.280 0.020,594.500 0.000,592.980z">
+                                    <Path.Fill>
+                                        <LinearGradientBrush StartPoint="0,1" EndPoint="0,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                            <GradientStop Color="#FFF6F8B0" Offset="0"/>
+                                            <GradientStop Color="#FFDAB971" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                                <Path StrokeThickness="1" Data="M0.000,592.980L2.840,594.600 1.290,595.280 0.020,594.500"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_86" RenderTransform="1,0,0,1,8.43307018280029,-11.3767004013062">
+                                <Path StrokeThickness="1" Data="M0.000,576.880L21.360,564.740 54.000,583.190 32.760,595.280 0.000,576.880z">
+                                    <Path.Fill>
+                                        <RadialGradientBrush Center="0,0" RadiusX="1" RadiusY="1" GradientOrigin="0,0" MappingMode="RelativeToBoundingBox">
+                                            <GradientStop Color="#FFF6F8B0" Offset="0"/>
+                                            <GradientStop Color="#FFDAB971" Offset="1"/>
+                                        </RadialGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                            </Canvas>
+                            <Canvas Name="Sheet_87" RenderTransform="1,0,0,1,8.43307018280029,-10.5100002288818">
+                                <Path Fill="#FFCC6633" Stroke="#FFCC6633" StrokeThickness="0.218" StrokeMiterLimit="3" Data="M0.000,576.870L32.740,595.280 32.760,594.410 0.000,576.010 0.000,576.870z M51.120,583.940L32.760,594.410 32.760,595.270 54.000,583.190 54.000,582.320 51.120,583.940z"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_88" RenderTransform="1,0,0,1,30.0737991333008,-22.4288997650146">
+                                <Path StrokeThickness="1" Data="M4.890,585.890L0.000,588.690 11.270,595.280 16.120,592.470 4.850,585.880 4.890,585.890z">
+                                    <Path.Fill>
+                                        <VisualBrush ViewportUnits="RelativeToBoundingBox" Viewport="0.000,0.000,1.000,1.000" Stretch="Fill" TileMode="Tile">
+                                            <VisualBrush.Visual>
+                                                <Canvas Width="1" Height="1" ClipToBounds="True">
+                                                    <Path StrokeThickness="1" Data="M0.000,1.000L0.000,0.000 1.000,0.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="1,0" EndPoint="0,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="White" Offset="0"/>
+                                                                <GradientStop Color="#FFB8E6EF" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                    <Path StrokeThickness="1" Data="M0.000,1.000L1.000,1.000 1.000,0.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="White" Offset="0"/>
+                                                                <GradientStop Color="#FFB8E6EF" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                </Canvas>
+                                            </VisualBrush.Visual>
+                                        </VisualBrush>
+                                    </Path.Fill>
+                                </Path>
+                                <Path Stroke="#FF295687" StrokeThickness="0.375" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M4.890,585.890L0.000,588.690 11.270,595.280 16.120,592.470 4.850,585.880"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_89" RenderTransform="1,0,0,1,40.2533988952637,-29.2282009124756">
+                                <Path StrokeThickness="1" Data="M1.930,589.620L1.900,589.720 0.000,584.500A39.851,39.851,0.000,0,1,0.630,577.600A3.732,3.732,0.000,0,1,6.060,577.460A12.005,12.005,0.000,0,1,12.830,591.070L12.530,595.280 1.930,589.620z">
+                                    <Path.Fill>
+                                        <VisualBrush ViewportUnits="RelativeToBoundingBox" Viewport="0.000,0.000,1.000,1.000" Stretch="Fill" TileMode="Tile">
+                                            <VisualBrush.Visual>
+                                                <Canvas Width="1" Height="1" ClipToBounds="True">
+                                                    <Path StrokeThickness="1" Data="M0.000,1.000L0.000,0.000 1.000,0.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,1" EndPoint="0,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="#FFE3F5F9" Offset="0"/>
+                                                                <GradientStop Color="#FF7BB4D2" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                    <Path StrokeThickness="1" Data="M0.000,1.000L1.000,1.000 1.000,0.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="#FFE3F5F9" Offset="0"/>
+                                                                <GradientStop Color="#FF7BB4D2" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                </Canvas>
+                                            </VisualBrush.Visual>
+                                        </VisualBrush>
+                                    </Path.Fill>
+                                </Path>
+                                <Path StrokeThickness="1" Data="M1.930,589.620L1.900,589.720 0.000,584.500A39.851,39.851,0.000,0,1,0.630,577.600A3.732,3.732,0.000,0,1,6.060,577.460A12.005,12.005,0.000,0,1,12.830,591.070L12.530,595.280"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_90" RenderTransform="1,0,0,1,41.5993995666504,-40.2346992492676">
+                                <Path StrokeThickness="1" Data="M10.490,595.280A10.432,10.432,-180.000,0,0,7.090,590.420A8.157,8.157,-180.000,0,0,0.000,587.830L4.730,585.240A8.158,8.158,0.000,0,1,11.820,587.830A10.474,10.474,0.000,0,1,15.190,592.590L10.490,595.280z">
+                                    <Path.Fill>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                            <GradientStop Color="#FFF7F3E8" Offset="0"/>
+                                            <GradientStop Color="#FFB8E6EF" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                                <Path StrokeThickness="1" Data="M10.490,595.280A10.432,10.432,-180.000,0,0,7.090,590.420A8.157,8.157,-180.000,0,0,0.000,587.830L4.730,585.240A8.158,8.158,0.000,0,1,11.820,587.830A10.474,10.474,0.000,0,1,15.190,592.590"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_91" RenderTransform="1,0,0,1,52.0900993347168,-29.3927001953125">
+                                <Path StrokeThickness="1" Data="M4.700,581.740A8.495,8.495,0.000,0,1,5.060,583.500A52.856,52.856,0.000,0,1,5.330,592.400A15.669,15.669,0.000,0,1,0.860,595.280A1061.860,1061.860,-180.000,0,0,0.330,586.100A8.404,8.404,-180.000,0,0,0.020,584.520L0.000,584.430A3.802,3.802,0.000,0,1,4.690,581.730L4.700,581.740z">
+                                    <Path.Fill>
+                                        <VisualBrush ViewportUnits="RelativeToBoundingBox" Viewport="0.000,0.000,1.000,1.000" Stretch="Fill" TileMode="Tile">
+                                            <VisualBrush.Visual>
+                                                <Canvas Width="1" Height="1" ClipToBounds="True">
+                                                    <Path StrokeThickness="1" Data="M0.000,0.000L0.000,1.000 1.000,1.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="#FFB8E6EF" Offset="0"/>
+                                                                <GradientStop Color="#FF7BB4D2" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                    <Path StrokeThickness="1" Data="M0.000,0.000L1.000,0.000 1.000,1.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="#FFB8E6EF" Offset="0"/>
+                                                                <GradientStop Color="#FF7BB4D2" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                </Canvas>
+                                            </VisualBrush.Visual>
+                                        </VisualBrush>
+                                    </Path.Fill>
+                                </Path>
+                                <Path StrokeThickness="1" Data="M4.700,581.740A8.495,8.495,0.000,0,1,5.060,583.500A52.856,52.856,0.000,0,1,5.330,592.400A15.669,15.669,0.000,0,1,0.860,595.280A1061.860,1061.860,-180.000,0,0,0.330,586.100A8.404,8.404,-180.000,0,0,0.020,584.520L0.000,584.430A3.802,3.802,0.000,0,1,4.690,581.730"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_92" RenderTransform="1,0,0,1,52.4370002746582,-26.9067993164063">
+                                <Path Fill="#FF658EB8" StrokeThickness="1" Data="M0.000,593.070L4.260,590.650 3.910,595.280 0.000,593.070z"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_93" RenderTransform="1,0,0,1,39.6935997009277,-24.7801990509033">
+                                <Path StrokeThickness="1" Data="M6.380,591.460A2.736,2.736,0.000,0,1,4.280,594.670A2.918,2.918,0.000,0,1,0.470,593.650A2.738,2.738,0.000,0,1,2.580,590.430A2.917,2.917,0.000,0,1,6.380,591.460z">
+                                    <Path.Fill>
+                                        <RadialGradientBrush Center="0,1" RadiusX="1" RadiusY="1" GradientOrigin="0,1" MappingMode="RelativeToBoundingBox">
+                                            <GradientStop Color="White" Offset="0"/>
+                                            <GradientStop Color="#FFDA8C36" Offset="1"/>
+                                        </RadialGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                            </Canvas>
+                            <Canvas Name="Sheet_94" RenderTransform="1,0,0,1,45.7994003295898,-47.3978996276855">
+                                <Path StrokeThickness="1" Data="M0.140,592.880L0.160,594.020A2.035,2.035,-180.000,0,0,2.550,595.030A5.695,5.695,-180.000,0,0,5.680,594.640L5.650,592.480A5.069,5.069,0.000,0,1,0.230,592.830L0.140,592.880z">
+                                    <Path.Fill>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                            <GradientStop Color="#FF7BB4D2" Offset="0"/>
+                                            <GradientStop Color="#FF658EB8" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                                <Path StrokeThickness="1" Data="M0.140,592.880L0.160,594.020A2.035,2.035,-180.000,0,0,2.550,595.030A5.695,5.695,-180.000,0,0,5.680,594.640L5.650,592.480A5.069,5.069,0.000,0,1,0.230,592.830"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_95" RenderTransform="1,0,0,1,45.3688011169434,-25.2898006439209">
+                                <Path Fill="#FF7BB4D2" StrokeThickness="1" Data="M7.530,587.270L0.340,591.400A2.046,2.046,0.000,0,1,0.000,594.360A1.852,1.852,-180.000,0,0,2.710,594.040L7.640,591.150 7.530,587.270z"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_96" RenderTransform="1,0,0,1,36.1254005432129,-31.7469005584717">
+                                <Path Fill="#FF7BB4D2" StrokeThickness="1" Data="M0.270,595.280L6.280,591.910 6.110,588.060 0.000,591.420 0.270,595.280z"/>
+                                <Path StrokeThickness="1" Data="M0.270,595.280L6.280,591.910 6.110,588.060 0.000,591.420"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_97" RenderTransform="1,0,0,1,43.6559982299805,-48.9421997070313">
+                                <Path StrokeThickness="1" Data="M9.880,589.570A5.366,5.366,0.000,0,1,4.940,595.280A5.366,5.366,0.000,0,1,0.000,589.570A5.368,5.368,0.000,0,1,4.940,583.860A5.368,5.368,0.000,0,1,9.880,589.570L-2.470,581.010 9.880,589.570z">
+                                    <Path.Fill>
+                                        <RadialGradientBrush Center="0.5,0.5" RadiusX="0.5" RadiusY="0.5" GradientOrigin="0.5,0.5" MappingMode="RelativeToBoundingBox">
+                                            <GradientStop Color="White" Offset="0"/>
+                                            <GradientStop Color="#FFDA8C36" Offset="1"/>
+                                        </RadialGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                                <Path Stroke="#FFD75139" StrokeThickness="0.375" StrokeMiterLimit="3" Data="M9.880,589.570A5.366,5.366,0.000,0,1,4.940,595.280A5.366,5.366,0.000,0,1,0.000,589.570A5.368,5.368,0.000,0,1,4.940,583.860A5.368,5.368,0.000,0,1,9.880,589.570z"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_98" RenderTransform="1,0,0,1,35.9850997924805,-29.146900177002">
+                                <Path Fill="White" StrokeThickness="1" Data="M0.000,586.790A1387.350,1387.350,-180.000,0,0,4.360,584.330L6.240,585.430 0.170,588.880 0.000,586.790z M16.770,591.200L9.730,595.280A2.450,2.450,-180.000,0,0,7.550,594.540A1.422,1.422,0.000,0,1,8.310,593.840A395.138,395.138,-180.000,0,0,14.890,590.100L16.770,591.200z"/>
+                                <Path StrokeThickness="1" Data="M0.000,586.790A1387.350,1387.350,-180.000,0,0,4.360,584.330L6.240,585.430 0.170,588.880 M16.770,591.200L9.730,595.280A2.450,2.450,-180.000,0,0,7.550,594.540A1.422,1.422,0.000,0,1,8.310,593.840A395.138,395.138,-180.000,0,0,14.890,590.100L16.770,591.200"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_99" RenderTransform="1,0,0,1,35.9687004089355,-25.0438995361328">
+                                <Path StrokeThickness="1" Data="M6.340,585.380L6.160,578.070 6.340,585.380z M0.430,588.570L6.390,585.340 0.430,588.570z M14.860,582.870L14.860,585.990 8.960,589.380A4.121,4.121,-180.000,0,0,7.610,590.370A4.179,4.179,-180.000,0,0,4.370,592.200A2.238,2.238,-180.000,0,0,7.490,595.140A4.748,4.748,-180.000,0,0,9.380,594.130A3.170,3.170,-180.000,0,0,13.070,593.280L20.730,588.780A3.171,3.171,-180.000,0,0,21.610,585.980A605.106,605.106,-180.000,0,0,21.210,579.200A9.847,9.847,-180.000,0,0,17.480,572.680A18.392,18.392,-180.000,0,0,15.510,571.240L15.480,570.370A5.687,5.687,-180.000,0,0,17.580,565.810A5.358,5.358,-180.000,0,0,12.630,559.960A5.290,5.290,-180.000,0,0,7.730,565.810A6.048,6.048,-180.000,0,0,9.760,570.430L5.660,572.680A2.741,2.741,-180.000,0,0,4.510,575.070L4.290,580.250A89.912,89.912,-180.000,0,0,0.000,582.630L14.860,582.870z"/>
+                                <Path Stroke="#FF295687" StrokeThickness="0.375" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M6.340,585.380L6.160,578.070 M0.430,588.570L6.390,585.340 M14.860,582.870L14.860,585.990 8.960,589.380A4.121,4.121,-180.000,0,0,7.610,590.370A4.179,4.179,-180.000,0,0,4.370,592.200A2.238,2.238,-180.000,0,0,7.490,595.140A4.748,4.748,-180.000,0,0,9.380,594.130A3.170,3.170,-180.000,0,0,13.070,593.280L20.730,588.780A3.171,3.171,-180.000,0,0,21.610,585.980A605.106,605.106,-180.000,0,0,21.210,579.200A9.847,9.847,-180.000,0,0,17.480,572.680A18.392,18.392,-180.000,0,0,15.510,571.240L15.480,570.370A5.687,5.687,-180.000,0,0,17.580,565.810A5.358,5.358,-180.000,0,0,12.630,559.960A5.290,5.290,-180.000,0,0,7.730,565.810A6.048,6.048,-180.000,0,0,9.760,570.430L5.660,572.680A2.741,2.741,-180.000,0,0,4.510,575.070L4.290,580.250A89.912,89.912,-180.000,0,0,0.000,582.630"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_100" RenderTransform="1,0,0,1,30.0737991333008,-21.5284004211426">
+                                <Path Fill="#FF295687" Stroke="#FF295687" StrokeThickness="0.218" StrokeMiterLimit="3" Data="M5.640,590.990L0.000,587.630 0.000,588.560 5.710,591.960 5.770,592.850 6.480,592.420 11.260,595.270 17.000,591.960 16.120,591.480 11.270,594.340 6.740,591.640 5.740,576.960 4.590,577.610 5.640,590.990z"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_101" RenderTransform="1,0,0,1,22.8082008361816,-39.190601348877">
+                                <Path StrokeThickness="1" Data="M11.850,595.280L0.000,588.710 1.140,588.150 13.010,594.620 11.850,595.280z">
+                                    <Path.Fill>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                            <GradientStop Color="#FFF7F3E8" Offset="0"/>
+                                            <GradientStop Color="#FFB8E6EF" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                            </Canvas>
+                            <Canvas Name="Sheet_102" RenderTransform="1,0,0,1,23.0739994049072,-21.8010005950928">
+                                <Path Stroke="#FF295687" StrokeThickness="0.375" StrokeMiterLimit="3" Data="M11.820,592.620A5.409,5.409,0.000,0,1,5.910,595.280A5.404,5.404,0.000,0,1,0.000,592.620A5.405,5.405,0.000,0,1,5.910,589.960A5.410,5.410,0.000,0,1,11.820,592.620z">
+                                    <Path.Fill>
+                                        <RadialGradientBrush Center="0,0" RadiusX="1" RadiusY="1" GradientOrigin="0,0" MappingMode="RelativeToBoundingBox">
+                                            <GradientStop Color="White" Offset="0"/>
+                                            <GradientStop Color="#FF7BB4D2" Offset="1"/>
+                                        </RadialGradientBrush>
+                                    </Path.Fill>
+                                </Path>
+                            </Canvas>
+                            <Canvas Name="Sheet_103" RenderTransform="1,0,0,1,22.8145008087158,-23.9564990997314">
+                                <Path Stroke="#FF295687" StrokeThickness="0.375" StrokeMiterLimit="3" Data="M0.000,573.460L1.000,588.630 13.030,595.280 11.850,579.950 0.000,573.460z">
+                                    <Path.Fill>
+                                        <VisualBrush ViewportUnits="RelativeToBoundingBox" Viewport="0.000,0.000,1.000,1.000" Stretch="Fill" TileMode="Tile">
+                                            <VisualBrush.Visual>
+                                                <Canvas Width="1" Height="1" ClipToBounds="True">
+                                                    <Path StrokeThickness="1" Data="M0.000,0.000L0.000,1.000 1.000,1.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="White" Offset="0"/>
+                                                                <GradientStop Color="#FF7BB4D2" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                    <Path StrokeThickness="1" Data="M0.000,0.000L1.000,0.000 1.000,1.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="White" Offset="0"/>
+                                                                <GradientStop Color="#FF7BB4D2" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                </Canvas>
+                                            </VisualBrush.Visual>
+                                        </VisualBrush>
+                                    </Path.Fill>
+                                </Path>
+                            </Canvas>
+                            <Canvas Name="Sheet_104" RenderTransform="1,0,0,1,24.2812004089355,-22.1650009155273">
+                                <Path Name="TestPath" Stroke="#FF295687" StrokeThickness="0.375" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M3.300,584.210A22.016,22.016,-180.000,0,0,0.000,594.520L1.920,595.280A22.024,22.024,0.000,0,1,5.220,584.970L3.300,584.210z">
+                                    <Path.Fill>
+                                        <VisualBrush ViewportUnits="RelativeToBoundingBox" Viewport="0.000,0.000,1.000,1.000" Stretch="Fill" TileMode="Tile">
+                                            <VisualBrush.Visual>
+                                                <Canvas Width="1" Height="1" ClipToBounds="True">
+                                                    <Path StrokeThickness="1" Data="M0.000,1.000L0.000,0.000 1.000,0.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="1,0" EndPoint="0,0" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="White" Offset="0"/>
+                                                                <GradientStop Color="#FFB8E6EF" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                    <Path StrokeThickness="1" Data="M0.000,1.000L1.000,1.000 1.000,0.000z">
+                                                        <Path.Fill>
+                                                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" MappingMode="RelativeToBoundingBox" SpreadMethod="Pad">
+                                                                <GradientStop Color="White" Offset="0"/>
+                                                                <GradientStop Color="#FFB8E6EF" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Path.Fill>
+                                                    </Path>
+                                                </Canvas>
+                                            </VisualBrush.Visual>
+                                        </VisualBrush>
+                                    </Path.Fill>
+                                </Path>
+                            </Canvas>
+                            <Canvas Name="Sheet_105" RenderTransform="1,0,0,1,23.0650997161865,-20.722900390625">
+                                <Path Fill="#FF295687" Stroke="#FF295687" StrokeThickness="0.373" StrokeMiterLimit="3" Data="M6.430,583.530L7.080,591.670 3.180,593.890A22.525,22.525,0.000,0,1,6.430,583.530z M11.820,591.570A5.408,5.408,0.000,0,1,5.910,594.230A5.405,5.405,0.000,0,1,0.000,591.570L0.000,592.620A5.404,5.404,-180.000,0,0,5.910,595.280A5.409,5.409,-180.000,0,0,11.820,592.620L11.820,591.570z"/>
+                            </Canvas>
+                            <Canvas Name="Sheet_106" RenderTransform="1,0,0,1,8.43307018280029,-10.5100002288818">
+                                <Path Stroke="Black" StrokeThickness="0.72" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M37.300,555.900L33.440,557.960A2.378,2.378,-180.000,0,0,32.460,558.880A26.628,26.628,-180.000,0,0,31.820,565.720A55.544,55.544,-180.000,0,0,27.550,568.150L27.520,567.150 27.380,565.940 15.510,559.470 14.380,560.030 14.880,567.550 0.000,576.010 0.000,576.870 32.740,595.280 54.000,583.190 54.000,582.320 50.890,580.560 51.530,565.810 48.690,564.180A11.232,11.232,-180.000,0,0,43.050,556.710A33.346,33.346,0.000,0,1,43.020,555.830A5.817,5.817,-180.000,0,0,45.110,550.910A5.251,5.251,-180.000,0,0,40.160,545.430A5.160,5.160,-180.000,0,0,35.230,550.830A6.048,6.048,-180.000,0,0,37.300,555.900z"/>
+                            </Canvas>
+                        </Canvas>
+                        <Canvas Name="Arrow4_3" RenderTransform="-6.12303176911189E-17,-1,-1,6.12303176911189E-17,1065.82995605469,487.558990478516">
+                            <Path Fill="#FFDDE2CD" Stroke="Black" StrokeThickness="0.24" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M0.000,575.430L19.840,555.590 19.840,568.690 48.190,568.690 48.190,582.180 19.840,582.180 19.840,595.280 0.000,575.430z"/>
+                        </Canvas>
+                        <Canvas Name="Arrow4_1" RenderTransform="-6.12303176911189E-17,-1,-1,6.12303176911189E-17,793.700988769531,487.558990478516">
+                            <Path Fill="#FFDDE2CD" Stroke="Black" StrokeThickness="0.24" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M0.000,575.430L19.840,555.590 19.840,568.690 48.190,568.690 48.190,582.180 19.840,582.180 19.840,595.280 0.000,575.430z"/>
+                        </Canvas>
+                        <Canvas Name="Step3_3" RenderTransform="1,0,0,1,431.575012207031,-162.992004394531">
+                            <Rectangle Fill="White" Stroke="Black" StrokeThickness="0.24" Width="121.421" Height="56.933" Canvas.Left="-0.12" Canvas.Top="538.463"/>
+                            <Canvas>
+                                <TextBlock Text="Creating WPF " FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="16.64" Canvas.Top="541.427"/>
+                                <TextBlock Text="application" FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="12.73" Canvas.Top="558.227"/>
+                                <Canvas/>
+                                <TextBlock Text="with" FontFamily="Arial" FontStyle="Normal" FontWeight="Normal" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="79.67" Canvas.Top="558.227"/>
+                                <TextBlock Text="Ab" FontFamily="Arial" FontStyle="Normal" FontWeight="Bold" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="4.57" Canvas.Top="575.026"/>
+                                <TextBlock Text="2" FontFamily="Arial" FontStyle="Normal" FontWeight="Bold" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="23.233" Canvas.Top="575.026"/>
+                                <TextBlock Text="d" FontFamily="Arial" FontStyle="Normal" FontWeight="Bold" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="31.02" Canvas.Top="575.026"/>
+                                <TextBlock Text="." FontFamily="Arial" FontStyle="Normal" FontWeight="Bold" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="39.573" Canvas.Top="575.026"/>
+                                <TextBlock Text="ReaderSvg" FontFamily="Arial" FontStyle="Normal" FontWeight="Bold" FontSize="14." Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Bottom" Canvas.Left="43.463" Canvas.Top="575.026"/>
+                            </Canvas>
+                        </Canvas>
+                        <Canvas Name="Arrow3_3" RenderTransform="1,0,0,1,422.361999511719,-425.196990966797">
+                            <Path Stroke="Black" StrokeThickness="1.2" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M0.000,595.280L0.000,619.370 69.800,619.370 69.800,793.350"/>
+                            <Path Fill="Black" StrokeThickness="1" RenderTransform="-2.27776783854744E-16,-3.7200000333786,3.7200000333786,-2.27776783854744E-16,69.8000030517578,800.789975881577" Data="M2.000,1.000L0.000,0.000 2.000,-1.000 2.000,1.000"/>
+                        </Canvas>
+                        <Canvas Name="Arrow4_2" RenderTransform="-6.12303176911189E-17,-1,-1,6.12303176911189E-17,935.432983398438,487.558990478516">
+                            <Path Fill="#FFDDE2CD" Stroke="Black" StrokeThickness="0.24" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeLineJoin="Round" StrokeMiterLimit="3" Data="M0.000,575.430L19.840,555.590 19.840,568.690 48.190,568.690 48.190,582.180 19.840,582.180 19.840,595.280 0.000,575.430z"/>
+                        </Canvas>
+                    </Canvas>
+                </Canvas>
+            </Canvas>
+        </Viewbox>
+        <Grid Grid.Row="1" Margin="0 2 0 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Margin="5 0" VerticalAlignment="Center">Step:</TextBlock>
+            <Slider Name="StepSlider" Grid.Column="1" Minimum="0" TickFrequency="1" TickPlacement="TopLeft" IsSnapToTickEnabled="True" ValueChanged="StepSlider_ValueChanged"/>
+            <Button Name="PlayStopButton" Grid.Column="2" Margin="5 2 5 2" Width="70" Click="PlayStopButton_Click" Content="Play"/>
+        </Grid>
+        <Rectangle Height="1" Grid.Row="1" VerticalAlignment="Top" Fill="Gray"/>      
+    </Grid>
+</UserControl>

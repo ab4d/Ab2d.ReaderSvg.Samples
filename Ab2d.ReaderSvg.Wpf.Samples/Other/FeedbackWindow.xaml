@@ -1,0 +1,41 @@
+﻿<Window x:Class="Ab2d.Samples.ReaderSvgSamples.Other.FeedbackWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Feedback" 
+        WindowStartupLocation="Manual"
+        Icon="/ab4d.ico"
+        Height="330" Width="600">
+    <Grid>
+        <Grid.LayoutTransform>
+            <ScaleTransform ScaleX="1.2" ScaleY="1.2"/>
+        </Grid.LayoutTransform>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="40"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Column="1" Grid.Row="0" Margin="0 30 0 0" FontWeight="Bold" FontSize="14" Text="We appreciate your feedback" />
+
+        <TextBox Name="MessageTextBlock" Grid.Column="1" Grid.Row="1" Margin="0 10 0 7" Text="Ab2d.ReaderSvg library is "
+                 AcceptsReturn="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" IsUndoEnabled="True" TextWrapping="NoWrap"/>
+
+        <Rectangle Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" Grid.RowSpan="2" Fill="LightBlue"/>
+
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2" Margin="0 7 0 10" HorizontalAlignment="Right">
+            <Button Name="CancelButton" VerticalAlignment="Center" IsCancel="True" Width="70" Height="27" FontWeight="Bold" Margin="0 0 15 0" Click="CancelButton_Click">Cancel</Button>
+            <Button Name="SendButton" VerticalAlignment="Center" IsDefault="True" Width="70" Height="27" FontWeight="Bold" Click="SendButton_Click">Send</Button>
+        </StackPanel>
+                
+        <Grid Grid.Column="1" Grid.Row="3" Name="ProgressPanel" Visibility="Collapsed" HorizontalAlignment="Stretch">
+            <ProgressBar Name="ProgressBar1" IsIndeterminate="False"/>
+            <TextBlock Name="ProgressTextBlock" Margin="5 0 0 0">Sending data...</TextBlock>
+        </Grid>
+    </Grid>
+</Window>

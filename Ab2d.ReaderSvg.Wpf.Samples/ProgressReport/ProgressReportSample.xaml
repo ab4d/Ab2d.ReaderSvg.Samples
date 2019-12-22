@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="Ab2d.Samples.ReaderSvgSamples.ProgressReport.ProgressReportSample"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Background="White"
+	>
+	<!-- If Background is ommited than darg and drop does work only on controls on the page - Button -->
+	<Grid Name="MainWindowGrid">
+		<Grid x:Name="MainGrid"/>
+		<TextBlock Name="DragDropMessage" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="23" TextWrapping="Wrap" Width="550" FontWeight="Bold" Foreground="DarkBlue">
+			Drag and drop svg file from windows explorer or use Load button to select svg file
+		</TextBlock>
+        
+        <StackPanel Orientation="Vertical" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+            <TextBlock Text="Added loading delay:"/>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
+                <Slider Name="LoadingDelaySlider" Minimum="0" Maximum="100" Value="40" Width="100" TickFrequency="10" IsSnapToTickEnabled="True"/>
+                <TextBlock Margin="10 0 0 0" Text="{Binding ElementName=LoadingDelaySlider, Path=Value}"/>
+                <TextBlock Margin="5 0 0 0" Text="ms"/>
+            </StackPanel>
+
+            <TextBlock Text="Progress window initial delay:"/>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
+                <Slider Name="InitialDelaySlider" Minimum="0" Maximum="900" Value="300" Width="100" TickFrequency="50" IsSnapToTickEnabled="True"/>
+                <TextBlock Margin="10 0 0 0" Text="{Binding ElementName=InitialDelaySlider, Path=Value}"/>
+                <TextBlock Margin="5 0 0 0" Text="ms"/>
+            </StackPanel>
+            <Button Name="LoadButton" Width="100" FontFamily="Verdana" BorderBrush="Black" BorderThickness="1" Click="LoadOnClick">Load</Button>
+        </StackPanel>
+        
+	</Grid>
+</UserControl>
+

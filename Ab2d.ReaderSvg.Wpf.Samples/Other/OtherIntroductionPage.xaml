@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="Ab2d.Samples.ReaderSvgSamples.Other.OtherIntroductionPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:common="clr-namespace:Ab2d.Samples.ReaderSvgSamples">
+    <UserControl.Background>
+        <LinearGradientBrush  StartPoint="0,1" EndPoint="0,0">
+            <GradientStop Color="#FCCC" Offset="0"/>
+            <GradientStop Color="#FFFFFFFF" Offset=".5"/>
+        </LinearGradientBrush>
+    </UserControl.Background>
+    <Grid>
+        <common:TextBlockEx Style="{StaticResource InfoContent}" Margin="20 10">
+            The samples under "Other" section demonstrate use of some of the properties or methods of Ab2d.ReaderSvg library.
+        </common:TextBlockEx>
+    </Grid>
+</UserControl>

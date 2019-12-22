@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="Ab2d.Samples.ReaderSvgSamples.Visio.NetworkWithEmbeddedData"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:svg="clr-namespace:Ab2d.Controls;assembly=Ab2d.ReaderSvg">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Grid.Row="0" FontSize="20" Foreground="#444444" Margin="5" Text="Visio Network diagram with embedded data"/>
+        
+        <Border Grid.Row="1" BorderBrush="Black" BorderThickness="1" Margin="5">
+            <svg:SvgViewbox Name="SvgNetwork" Source="/Resources/Sample Network.svg"/>
+        </Border>
+
+        <DataGrid Name="DataGrid1" Grid.Row="2" Margin="5" AutoGenerateColumns="True" ItemsSource="{Binding Path=.}" 
+                  IsReadOnly="True" SelectionChanged="DataGrid1_SelectionChanged"></DataGrid>
+
+        <!-- Overlay canvas -->
+        <Canvas Grid.Row="0" Grid.RowSpan="3">
+            <Border Name="CustomDataBorder"
+                    BorderBrush="Black" BorderThickness="2" CornerRadius="5" Background="Beige"
+                    VerticalAlignment="Top" HorizontalAlignment="Left"
+                    Visibility="Collapsed">
+                <ListBox Name="CustomDataListBox" Margin="5">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Width="105" Text="{Binding Key}"/>
+                                <TextBlock Text=":"/>
+                                <TextBlock Margin="5 0 0 0" Text="{Binding Value}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Border>
+        </Canvas>            
+    </Grid>
+</UserControl>

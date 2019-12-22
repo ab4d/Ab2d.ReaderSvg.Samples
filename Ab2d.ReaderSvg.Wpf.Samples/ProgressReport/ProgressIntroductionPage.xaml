@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="Ab2d.Samples.ReaderSvgSamples.ProgressReport.ProgressIntroductionPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:common="clr-namespace:Ab2d.Samples.ReaderSvgSamples">
+    <UserControl.Background>
+        <LinearGradientBrush  StartPoint="0,1" EndPoint="0,0">
+            <GradientStop Color="#FCCC" Offset="0"/>
+            <GradientStop Color="#FFFFFFFF" Offset=".5"/>
+        </LinearGradientBrush>
+    </UserControl.Background>
+    <Grid>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Orientation="Vertical" Margin="20 10">
+                <!-- NOTE: In the previous versions of the samples FlowDocumentReader was used to show info pages. But because this control always thrown an exception that 'PresentationUI.Aero2' was not found (the exception was handled by .Net code, but it always stopped the debugger if stop on exception was turned on), I have upgraded TextBlock to add some additional markup. -->
+                <common:TextBlockEx Style="{StaticResource InfoContent}">
+                    When larger svg files are read the user interface can become unresponsive. This can happen because generally all UI elements must be created on the same thread.\n
+                    \n
+                    The samples in this section demonstrate how to prevent this.\n
+                    \n
+                    The \bProgressReportSample\b sample solves this by creating a new Window that reports progress. The trick is to create the new Window on another thread with its own Dispatcher object. This way the main UI thread can read the svg file and reports progress to the Progress Window.\n
+                    \n
+                    The \bMultithreadedSample\b solves the problem with reading the svg file in its own thread. After the reading is done the read objects are used by the main UI thread.\n
+                    \n
+                    This can be done but has its drawbacks.\n
+                    \n
+                    In order to be able to access the UI elements read on another thread, the read objects must be frozen (Freeze method must be called on read objects).
+                    This makes the read objects unchangable (for example it is not possible to change the color of a Rectangle).\n
+                    \n
+                    Even bigger problem is that not all UI elements can be frozen. For example all Shapes and Controls cannot be frozen.
+                    This means that in order to freeze the objects we need to read elements as Geometries - use ReadGeometries method instead of Read method.
+                    Even with reading as geometries the read result cannot be frozen all the times. 
+                    If the geometries contain VisualBrushes they cannot be frozen.\n
+                    \n
+                    The second approach is therefore only useable when you do not need to change the read geometries and know in advance than the read geometries can be frozen.\n
+                    \n
+                    NOTE:\n
+                    Because there are no larger svg files available with the samples, it is possible to add additional delay when reading files to simulate the larger file load.
+                 </common:TextBlockEx>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

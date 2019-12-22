@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="Ab2d.Samples.ReaderSvgSamples.CodeSamples.SimpleOpen"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Background="White"
+	>
+	<!-- If Background is ommited than darg and drop does work only on controls on the page - Button -->
+	<Grid Name="MainWindowGrid">
+		<Grid x:Name="MainGrid">
+			<Grid.RenderTransform>
+				<ScaleTransform x:Name="uiZoomTransform"
+								ScaleX="{Binding ElementName=uiZoomSlider, Path=Value}"
+								ScaleY="{Binding ElementName=uiZoomSlider, Path=Value}"/>
+			</Grid.RenderTransform>
+		</Grid>
+		<TextBlock Name="DragDropMessage" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="23" TextWrapping="Wrap" Width="550" FontWeight="Bold" Foreground="DarkBlue">
+			Drag and drop svg file from windows explorer or use Load button to select svg file
+		</TextBlock>
+		<StackPanel Orientation="Horizontal"
+					VerticalAlignment="Top" HorizontalAlignment="Right" >
+			<Label Height="23">Zoom:</Label>
+			<Slider Name="uiZoomSlider" Orientation="Horizontal" Width="80"
+					Minimum="0.1" Maximum="3" Value="1" />
+		</StackPanel>
+		<Button Name="LoadButton" Width="100" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontFamily="Verdana" BorderBrush="Black" BorderThickness="1" Click="LoadOnClick">
+			Load
+		</Button>
+	</Grid>
+</UserControl>
+

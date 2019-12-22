@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="Ab2d.Samples.ReaderSvgSamples.Other.AutoSizeSample"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ab2d="clr-namespace:Ab2d.Controls;assembly=Ab2d.ReaderSvg">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Border BorderBrush="DarkBlue" BorderThickness="3" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left">
+            <ab2d:SvgViewbox Source="/Resources/party_invitation.svg" AutoSize="True"/>            
+        </Border>
+        <Border BorderBrush="DarkBlue" BorderThickness="3" Grid.Row="0" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Left">
+            <ab2d:SvgViewbox Source="/Resources/party_invitation.svg" AutoSize="False"/>
+        </Border>
+        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="0" Margin="5 5 5 3">
+            <TextBlock FontWeight="Bold" Margin="0 0 0 10">AutoSize = true (default)</TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin="0 0 0 5">By default the size of read svg objects is measured so the returned object is just as big as its containing objects - without any space around.</TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin="0 0 0 5">This way it is possible to precisly position and align the objects.</TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin="0 0 0 5">The size of the object is independent of the size of the Page (Letter, A4, etc.) where the object was drawn.</TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin="0 0 0 5">Note: Because of size measurement the svg file will be read a little bit faster if AutoSize is false. This means that if the size of root svg object is already the same as the size of its inner objects, it is recommended to set AutoSize to false.</TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="2" Orientation="Vertical" Margin="4 5 5 5">
+            <TextBlock FontWeight="Bold" Margin="0 0 0 10">AutoSize = false</TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin="0 0 0 5">The size of the returned object is set from the size defined in the root svg element.</TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin="0 0 0 5">This means that if the svg objects were drawn on the A4 page, the returned object will also have the A4 size. So if the objects were drawn in the center of the page, the space around objects will be preserved.</TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin="0 0 0 5">If the size of root svg is the same as the size of its inner objects it is recommended to set AutoSize to false because it there is no need for size measurement (little preformance improvement)</TextBlock>
+        </StackPanel>
+    </Grid>
+</UserControl>

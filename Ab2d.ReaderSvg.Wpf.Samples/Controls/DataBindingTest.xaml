@@ -1,0 +1,24 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:ab2d="clr-namespace:Ab2d.Controls;assembly=Ab2d.ReaderSvg"
+	x:Class="Ab2d.Samples.ReaderSvgSamples.Controls.DataBindingTest">
+	<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+		<ab2d:SvgViewbox Name="SvgImage" Grid.Row="0" Source="{Binding ElementName=ResourceNameComboBox, Path=Text}"/>
+		<StackPanel Orientation="Vertical" Grid.Row="1" VerticalAlignment="Bottom">
+			<TextBlock Grid.Column="0" Grid.Row="0" FontSize="13" TextWrapping="NoWrap" HorizontalAlignment="Left">
+				Select resource:
+			</TextBlock>
+			<ComboBox Name="ResourceNameComboBox" Width="200" Height="23" HorizontalAlignment="Left">
+				<ComboBoxItem Name="cbi2" IsSelected="True">/Resources/home1.svg</ComboBoxItem>
+				<ComboBoxItem Name="cbi3">/Resources/home6.svg</ComboBoxItem>
+				<ComboBoxItem Name="cbi4">/Resources/home11.svg</ComboBoxItem>
+                <ComboBoxItem Name="cbi5">/Resources/party_invitation.svg</ComboBoxItem>
+			</ComboBox>
+		</StackPanel>
+	</Grid>
+</UserControl>

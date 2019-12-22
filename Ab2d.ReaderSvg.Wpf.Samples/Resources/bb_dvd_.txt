@@ -1,0 +1,6 @@
+Title:    blueberry - iconset
+Author:   Marko J. Kolehmainen
+License:  http://web.resource.org/cc/PublicDomain
+Keywords: icon
+          desktop
+          computer

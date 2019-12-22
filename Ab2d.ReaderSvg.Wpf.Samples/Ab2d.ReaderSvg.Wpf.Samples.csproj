@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{79221C1B-325E-4E2C-A4BC-DDD581D90298}</ProjectGuid>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <RootNamespace>Ab2d.Samples.ReaderSvgSamples</RootNamespace>
+    <AssemblyName>Ab2d.Samples.ReaderSvgSamples</AssemblyName>
+    <WarningLevel>4</WarningLevel>
+    <OutputType>winexe</OutputType>
+    <MinFrameworkVersionRequired>3.0</MinFrameworkVersionRequired>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <ApplicationIcon>ab4d.ico</ApplicationIcon>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ab2d.ReaderSvg, Version=7.1.7295.2045, Culture=neutral, PublicKeyToken=d45c8e156fba2841, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ab2d.ReaderSvg.7.1.7295\lib\net45\Ab2d.ReaderSvg.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="ReachFramework" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.IdentityModel" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Controls\ControlsIntroductionPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FeedbackControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Other\FeedbackWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Other\GroupOptimizationsSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Other\IntroductionPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Other\GetXamlSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Other\OtherIntroductionPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Other\OtherSamplesIntroPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Other\RenderToBitmapSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Other\TrueTransformSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProgressReport\MultithreadedSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ProgressReport\ProgressWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ProgressReport\ProgressReportSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ProgressReport\ProgressIntroductionPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UseCases\AnimationTest.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Other\AutoSizeSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\SvgDrawingSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Other\SvgzSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\DataBindingTest.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Other\SvgComponents.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CodeSamples\SimpleOpen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CodeSamples\AddToStackPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UseCases\SvgLayoutSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\SvgViewboxSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UseCases\UseCasesIntroductionPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Visio\DynamicVisioFromXaml.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Visio\DynamicVisioWithReaderSvg.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Visio\VisioIntroductionPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Visio\NetworkWithEmbeddedData.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Visio\OfficePlanSample.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodeSamples\SimpleOpen.xaml.cs">
+      <DependentUpon>SimpleOpen.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ControlsIntroductionPage.xaml.cs">
+      <DependentUpon>ControlsIntroductionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicContentControl.cs" />
+    <Compile Include="FeedbackControl.xaml.cs">
+      <DependentUpon>FeedbackControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OpenSvgFileHelper.cs" />
+    <Compile Include="Other\FeedbackWindow.xaml.cs">
+      <DependentUpon>FeedbackWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Other\GroupOptimizationsSample.xaml.cs">
+      <DependentUpon>GroupOptimizationsSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Other\IntroductionPage.xaml.cs">
+      <DependentUpon>IntroductionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Other\GetXamlSample.xaml.cs">
+      <DependentUpon>GetXamlSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Other\OtherIntroductionPage.xaml.cs">
+      <DependentUpon>OtherIntroductionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Other\OtherSamplesIntroPage.xaml.cs">
+      <DependentUpon>OtherSamplesIntroPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Other\RenderToBitmapSample.xaml.cs">
+      <DependentUpon>RenderToBitmapSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Other\TrueTransformSample.xaml.cs">
+      <DependentUpon>TrueTransformSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressReport\MultithreadedSample.xaml.cs">
+      <DependentUpon>MultithreadedSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressReport\ProgressController.cs" />
+    <Compile Include="ProgressReport\ProgressWindow.xaml.cs">
+      <DependentUpon>ProgressWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressReport\ProgressReportSample.xaml.cs">
+      <DependentUpon>ProgressReportSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressReport\ProgressIntroductionPage.xaml.cs">
+      <DependentUpon>ProgressIntroductionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TextBlockEx.cs" />
+    <Compile Include="UseCases\AnimationTest.xaml.cs">
+      <DependentUpon>AnimationTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Other\AutoSizeSample.xaml.cs">
+      <DependentUpon>AutoSizeSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IsStringEmptyConverter.cs" />
+    <Compile Include="LineBreakableStringConverter.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SvgDrawingSample.xaml.cs">
+      <DependentUpon>SvgDrawingSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Other\SvgzSample.xaml.cs">
+      <DependentUpon>SvgzSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DataBindingTest.xaml.cs">
+      <DependentUpon>DataBindingTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DragAndDropHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Other\SvgComponents.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>SvgComponents.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CodeSamples\AddToStackPanel.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>AddToStackPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UseCases\SvgLayoutSample.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>SvgLayoutSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SvgViewboxSample.xaml.cs">
+      <DependentUpon>SvgViewboxSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UseCases\UseCasesIntroductionPage.xaml.cs">
+      <DependentUpon>UseCasesIntroductionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Visio\DynamicVisioFromXaml.xaml.cs">
+      <DependentUpon>DynamicVisioFromXaml.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Visio\DynamicVisioWithReaderSvg.xaml.cs">
+      <DependentUpon>DynamicVisioWithReaderSvg.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Visio\VisioIntroductionPage.xaml.cs">
+      <DependentUpon>VisioIntroductionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Visio\NetworkWithEmbeddedData.xaml.cs">
+      <DependentUpon>NetworkWithEmbeddedData.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Visio\OfficePlanSample.xaml.cs">
+      <DependentUpon>OfficePlanSample.xaml</DependentUpon>
+    </Compile>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\TrialVersionNotice2D.png" />
+    <None Include="Resources\messagebox_info.png" />
+    <None Include="Resources\birthday_cake.png" />
+    <Resource Include="Resources\bb_dvd_.png" />
+    <Resource Include="Resources\bb_dvd_.svg" />
+    <Resource Include="Resources\bb_dvd_.txt" />
+    <Resource Include="ab4d.ico" />
+    <Resource Include="Resources\ab4d-logo.png" />
+    <Content Include="Resources\birthday_cake.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\home1.png" />
+    <Resource Include="Resources\home1.svg" />
+    <None Include="Resources\home1.txt" />
+    <None Include="Resources\home6.png" />
+    <Resource Include="Resources\home6.svg" />
+    <None Include="Resources\home6.txt" />
+    <None Include="Resources\home11.png" />
+    <Resource Include="Resources\home11.svg" />
+    <None Include="Resources\home11.txt" />
+    <Resource Include="Resources\birthday_cake.txt" />
+    <Content Include="Resources\birthday_cake.svgz">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\groups test.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\messagebox_info.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\party_invitation.svg" />
+    <None Include="Resources\Office plan.vsd" />
+    <None Include="Resources\Sample Network.vsd" />
+    <None Include="Resources\shamrock_for_march_natha_01.png" />
+    <None Include="Resources\paint.png" />
+    <Content Include="Resources\paint.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\paint.txt" />
+    <None Include="Resources\ViewerSvg visio.vsd" />
+    <Resource Include="Resources\Office plan.svg" />
+    <Resource Include="Resources\Sample Network.svg" />
+    <Resource Include="Resources\ReaderSvgSilverlightSample.jpg" />
+    <Resource Include="Resources\ReaderSvg-WinForms.PNG" />
+    <Content Include="Resources\shamrock_for_march_natha_01.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\shamrock_for_march_natha_01.txt" />
+    <Resource Include="Resources\SvgToPngConverter.JPG" />
+    <Resource Include="Resources\SvgResourceDictionaryWriter.jpg" />
+    <Content Include="Resources\svg_layout.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\ViewerSvg visio.svg" />
+    <Resource Include="Samples.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

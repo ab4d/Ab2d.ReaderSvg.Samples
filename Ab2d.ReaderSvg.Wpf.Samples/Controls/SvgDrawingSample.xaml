@@ -1,0 +1,83 @@
+﻿<UserControl x:Class="Ab2d.Samples.ReaderSvgSamples.Controls.SvgDrawingSample"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ab2d="clr-namespace:Ab2d.Controls;assembly=Ab2d.ReaderSvg"
+	Loaded="PageLoaded"
+    >
+	<Grid>
+		<ScrollViewer VerticalScrollBarVisibility="Auto">
+			<StackPanel Orientation="Vertical">
+				<StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+					<TextBlock/>
+					<TextBlock HorizontalAlignment="Left" FontSize="16" TextBlock.FontWeight="Bold">This sample demonstrates how to use SvgDrawing in XAML</TextBlock>
+					<TextBlock/>
+                    <TextBlock HorizontalAlignment="Left">SvgDrawing read svg or svgz files as Drawings (better WPF performance but takes longer to read).</TextBlock>
+                    <TextBlock HorizontalAlignment="Left">To read the files as Shapes use SvgViewbox.</TextBlock>
+                    <TextBlock/>
+					<TextBlock HorizontalAlignment="Left">To use SvgDrawing do the following:</TextBlock>
+					<TextBlock/>					
+					<TextBlock HorizontalAlignment="Left">1) Add reference to Ab2d.ReaderSvg</TextBlock>
+					<TextBlock HorizontalAlignment="Left">2) Add namespace definition into root xaml element (for example Window):</TextBlock>
+					<TextBlock HorizontalAlignment="Left" Margin="20 0 0 0">xmlns:ab2d="clr-namespace:Ab2d.Controls;assembly=Ab2d.ReaderSvg"</TextBlock>
+					<TextBlock HorizontalAlignment="Left">3) Use SvgDrawing to read the svg file.</TextBlock>
+                    <TextBlock HorizontalAlignment="Left">4) Set the Source property on the SvgDrawing (see samples below).</TextBlock>
+                    <TextBlock HorizontalAlignment="Left">5) Optionaly it possible to set the OptimizationPercent (from 0 to 100) to additionaly optimize the geometry.</TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="14 0 0 0">If the SvgDrawing will be animated, it is recommended to set the OptimizationPercent value as big as possible (as much as there are no anomalies)</TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="14 0 0 0">Optimization improves performance with use of resources and combining similar geometries (see help file for more information).</TextBlock>
+                    <TextBlock HorizontalAlignment="Left" Margin="14 0 0 0">NOTE: if OptimizationPercent is bigger as 50, some anomalies can occur on the image (some files works perfectly with 100, but some other does not). </TextBlock>
+				</StackPanel>
+				<TextBlock FontSize="30"/>
+
+				<ab2d:SvgDrawing Source="/Resources/birthday_cake.svg" HorizontalAlignment="Center" Width="{Binding ElementName=SizeSlider, Path=Value}"/>
+				<TextBlock HorizontalAlignment="Center" TextBlock.FontWeight="Bold">&lt;ab2d:SvgDrawing Source="/Resources/birthday_cake.svg"/&gt;</TextBlock>
+				<TextBlock HorizontalAlignment="Center">(Build Action: Content)</TextBlock>
+				<TextBlock FontSize="30"/>
+
+                <ab2d:SvgDrawing Source="/Resources/birthday_cake.svg" OptimizationPercent="50" HorizontalAlignment="Center" Width="{Binding ElementName=SizeSlider, Path=Value}"/>
+                <TextBlock HorizontalAlignment="Center" TextBlock.FontWeight="Bold">&lt;ab2d:SvgDrawing Source="/Resources/birthday_cake.svg" OptimizationPercent="50"/&gt;</TextBlock>
+                <TextBlock HorizontalAlignment="Center">(Build Action: Content)</TextBlock>
+                <TextBlock FontSize="30"/>
+
+                <ab2d:SvgDrawing Source="/Resources/birthday_cake.svg" OptimizationPercent="100" HorizontalAlignment="Center" Width="{Binding ElementName=SizeSlider, Path=Value}"/>
+                <TextBlock HorizontalAlignment="Center" TextBlock.FontWeight="Bold">&lt;ab2d:SvgDrawing Source="/Resources/birthday_cake.svg" OptimizationPercent="100"/&gt;</TextBlock>
+                <TextBlock HorizontalAlignment="Center">(Build Action: Content)</TextBlock>
+                <TextBlock FontSize="30"/>
+
+                <ab2d:SvgDrawing Source="/Resources/home6.svg" HorizontalAlignment="Center" Width="{Binding ElementName=SizeSlider, Path=Value}"/>
+				<TextBlock HorizontalAlignment="Center" TextBlock.FontWeight="Bold">&lt;ab2d:SvgDrawing Source="/Resources/home6.svg"/&gt;</TextBlock>
+				<TextBlock HorizontalAlignment="Center">(Build Action: Resource - embeded into assemby)</TextBlock>
+				<TextBlock FontSize="30"/>
+
+				<ab2d:SvgDrawing Name="LocalFileSvgDrawing" Source="" HorizontalAlignment="Center" Width="{Binding ElementName=SizeSlider, Path=Value}"/>
+				<TextBlock Name="LocalFileSvgTextBlock" HorizontalAlignment="Center" TextBlock.FontWeight="Bold">&lt;ab2d:SvgDrawing Source=""/&gt;</TextBlock>
+				<TextBlock HorizontalAlignment="Center" TextBlock.FontWeight="Bold">or in code: LocalFileSvgDrawing.SetValue(Ab2d.SvgDrawing.SourceProperty, new Uri(localSvgFilePath))</TextBlock>
+				<TextBlock HorizontalAlignment="Center" TextBlock.FontWeight="Bold">or in code: LocalFileSvgDrawing.Source = new Uri(localSvgFilePath);</TextBlock>
+				<TextBlock HorizontalAlignment="Center">(loose svg file on the local disk - not included in the project)</TextBlock>
+
+				<TextBlock FontSize="30"/>
+
+				<ab2d:SvgDrawing Source="pack://siteoforigin:,,,/home11.svg" HorizontalAlignment="Center" Width="{Binding ElementName=SizeSlider, Path=Value}"/>
+				<TextBlock HorizontalAlignment="Center" TextBlock.FontWeight="Bold">&lt;ab2d:SvgDrawing Source="pack://siteoforigin:,,,/home11.svg"/&gt;</TextBlock>
+				<TextBlock HorizontalAlignment="Center">(loose svg file in the application directory - not included in the project)</TextBlock>
+				<TextBlock FontSize="30"/>
+
+                <ab2d:SvgDrawing x:Name="SvgDrawingFromStream" HorizontalAlignment="Center" Width="{Binding ElementName=SizeSlider, Path=Value}"/>
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold">SvgDrawingFromStream.SourceStream = Application.GetResourceStream(new Uri("pack://application:,,,/Resources/home1.svg")).Stream;</TextBlock>
+                <TextBlock HorizontalAlignment="Center">(SvgDrawing.SourceStream is set in code behind to a Stream)</TextBlock>
+			    <TextBlock FontSize="30"/>
+
+                <!-- Set source when user presses button so there is no initial wait when the tab is shown -->
+        <!--<ab2d:SvgViewbox Source="http://www.croczilla.com/svg/samples/tiger/tiger.svg" HorizontalAlignment="Center" Width="{Binding ElementName=SizeSlider, Path=Value}"/>-->
+        <Button Name="LoadSvgFromWebButton" Click="LoadSvgFromWebButtonClicked" Width="200" Height="50">Press to load svg file from web</Button>
+        <ab2d:SvgDrawing Name="WebSvgDrawing" Source="" HorizontalAlignment="Center" Visibility="Collapsed" Width="{Binding ElementName=SizeSlider, Path=Value}"/>
+        <TextBlock HorizontalAlignment="Center" TextBlock.FontWeight="Bold">&lt;ab2d:SvgDrawing Source="https://www.ab4d.com/images/tiger.svg"/&gt;</TextBlock>
+        <TextBlock HorizontalAlignment="Center">(web content)</TextBlock>
+        <TextBlock FontSize="30"/>        
+			</StackPanel>
+		</ScrollViewer>
+		<StackPanel Orientation="Vertical" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+			<TextBlock TextBlock.FontWeight="Bold" Text="Width:"/>
+			<Slider Name="SizeSlider" Orientation="Horizontal" Minimum="30" Maximum="500" Value="150" Width="120"/>
+		</StackPanel>
+	</Grid>
+</UserControl>

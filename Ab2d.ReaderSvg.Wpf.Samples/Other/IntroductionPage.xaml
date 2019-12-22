@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="Ab2d.Samples.ReaderSvgSamples.Other.IntroductionPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:common="clr-namespace:Ab2d.Samples.ReaderSvgSamples">
+    <UserControl.Background>
+        <LinearGradientBrush  StartPoint="0,1" EndPoint="0,0">
+            <GradientStop Color="#FCCC" Offset="0"/>
+            <GradientStop Color="#FFFFFFFF" Offset=".5"/>
+        </LinearGradientBrush>
+    </UserControl.Background>
+    <Grid>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Orientation="Vertical" Margin="20 10">
+                <!-- NOTE: In the previous versions of the samples FlowDocumentReader was used to show info pages. But because this control always thrown an exception that 'PresentationUI.Aero2' was not found (the exception was handled by .Net code, but it always stopped the debugger if stop on exception was turned on), I have upgraded TextBlock to add some additional markup. -->
+                <common:TextBlockEx Style="{StaticResource InfoTitle}">
+                    Welcome to the Samples for the \bAb2d.ReaderSvg\b library
+                </common:TextBlockEx>
+                <common:TextBlockEx Style="{StaticResource InfoContent}">
+                    The Ab2d.ReaderSvg library is a WPF library that can read svg and svgz files and convert them into WPF objects.\n
+                    \n
+                    The library not only can \baccurately read svg files\b but also have the following additional great features:\n
+                    \n
+                    \*Possibility to read svg objects as \bShapes\b (for easier manipulation) or as \bGeometry\b objects (for better draw performance).\n
+                    \*\bOptimize hierarchies and transformations\b to convert complex hierarchies with transformations into simpler objects.\n
+                    \*Additional optimization of Geometry objects to further \bimprove drawing performance\b.\n
+                    \*Read \bdata from custom properties\b that are attached to elements and export the data as xml serialized DataTable (only for svg files created in \bMicrosoft Visio\b).\n
+                    \*Included \bSvgViewbox\b and \bSvgDrawing controls\b that can be used in XAML.\n
+                    \*\bGet nicely formated XAML\b from read svg objects.\n                    
+                    \*\bPreserve element names\b - name can be read from id attribute or from title element.\n
+                    \*Using \bTrueTransform to change size and position\b of read objects by changing the actual shape data (without adding Transformation to root object).\n
+                    \*Possibility to \bconvert texts\b into PathGeometry.\n
+                    \*\bReporting progress\b while the file is read.\n
+                    \*Option to \bautomatically size\b the read objects so that only the svg content is get without the whole document defined in root svg element.\n
+                </common:TextBlockEx>
+
+                <Image Name="EvaluationImage" Source="/Resources/TrialVersionNotice2D.png" Stretch="None" Width="400" Height="220" Margin="0 20 0 10" HorizontalAlignment="Left"/>
+                <common:TextBlockEx x:Name="EvaluationTextBlockEx" Style="{StaticResource InfoContent}">
+                    When using \bevaluation version\b of Ab2d.ReaderSvg library, \bcolor of some objects is changed to gray.\b\n
+                    \n
+                    In commercial version the models are imported correctly.\n
+                    \n
+                    To see how the imported objects would look with the commercial version, \buse ViewerSvg\b and check the \b"Preview as using licensed version"\b.
+                </common:TextBlockEx>                
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

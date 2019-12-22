@@ -1,0 +1,75 @@
+﻿<UserControl x:Class="Ab2d.Samples.ReaderSvgSamples.Controls.SvgViewboxSample"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ab2d="clr-namespace:Ab2d.Controls;assembly=Ab2d.ReaderSvg"
+	Loaded="PageLoaded"
+    >
+	<Grid>
+		<ScrollViewer VerticalScrollBarVisibility="Auto">
+			<StackPanel Orientation="Vertical">
+				<StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+					<TextBlock/>
+					<TextBlock HorizontalAlignment="Left" FontSize="16" FontWeight="Bold">This sample demonstrates how to use SvgViewbox in XAML</TextBlock>
+                    <TextBlock/>
+                    <TextBlock HorizontalAlignment="Left">SvgViewbox read svg or svgz files as Shapes.</TextBlock>
+                    <TextBlock HorizontalAlignment="Left"> To read the files as Drawings (better WPF performance but takes longer to read) use SvgDrawing.</TextBlock>
+                    <TextBlock/>
+					<TextBlock HorizontalAlignment="Left">Note: WmfViewbox (in Ab2d.ReaderWmf library) can be used to read</TextBlock>
+					<TextBlock HorizontalAlignment="Left">Windows Metafile (wmf) and Enhanced Metafiles (emf) images just as SvgViewbox</TextBlock>
+					<TextBlock/>
+					<TextBlock/>
+					<TextBlock HorizontalAlignment="Left">To use SvgViewbox do the following:</TextBlock>
+					<TextBlock/>					
+					<TextBlock HorizontalAlignment="Left">1) Add reference to Ab2d.ReaderSvg</TextBlock>
+					<TextBlock HorizontalAlignment="Left">2) Add namespace definition into root xaml element (for example Window):</TextBlock>
+					<TextBlock HorizontalAlignment="Left" Margin="20 0 0 0">xmlns:ab2d="clr-namespace:Ab2d.Controls;assembly=Ab2d.ReaderSvg"</TextBlock>
+					<TextBlock HorizontalAlignment="Left">3) Use SvgViewbox to read the svg file.</TextBlock>
+                    <TextBlock HorizontalAlignment="Left">4) Set the Source property on the SvgViewbox (see samples below)</TextBlock>
+				</StackPanel>
+				<TextBlock FontSize="30"/>
+
+				<ab2d:SvgViewbox Source="/Resources/birthday_cake.svg" HorizontalAlignment="Center" Width="{Binding ElementName=SizeSlider, Path=Value}"/>
+				<TextBlock HorizontalAlignment="Center" FontWeight="Bold">&lt;ab2d:SvgViewbox Source="/Resources/birthday_cake.svg"/&gt;</TextBlock>
+				<TextBlock HorizontalAlignment="Center">(Build Action: Content)</TextBlock>
+				<TextBlock FontSize="30"/>
+
+				<ab2d:SvgViewbox Source="/Resources/home6.svg" HorizontalAlignment="Center" Width="{Binding ElementName=SizeSlider, Path=Value}"/>
+				<TextBlock HorizontalAlignment="Center" FontWeight="Bold">&lt;ab2d:SvgViewbox Source="/Resources/home6.svg"/&gt;</TextBlock>
+				<TextBlock HorizontalAlignment="Center">(Build Action: Resource - embeded into assemby)</TextBlock>
+				<TextBlock FontSize="30"/>
+
+				<ab2d:SvgViewbox Name="LocalFileSvgViewbox" Source="" HorizontalAlignment="Center" Width="{Binding ElementName=SizeSlider, Path=Value}"/>
+				<TextBlock Name="LocalFileSvgTextBlock" HorizontalAlignment="Center" TextBlock.FontWeight="Bold">&lt;ab2d:SvgViewbox Source=""/&gt;</TextBlock>
+				<TextBlock HorizontalAlignment="Center" FontWeight="Bold">or in code: LocalFileSvgViewbox.SetValue(Ab2d.SvgViewbox.SourceProperty, new Uri(localSvgFilePath))</TextBlock>
+				<TextBlock HorizontalAlignment="Center" FontWeight="Bold">or in code: LocalFileSvgViewbox.Source = new Uri(localSvgFilePath);</TextBlock>
+				<TextBlock HorizontalAlignment="Center">(loose svg file on the local disk - not included in the project)</TextBlock>
+
+				<TextBlock FontSize="30"/>
+
+				<ab2d:SvgViewbox Source="pack://siteoforigin:,,,/home11.svg" HorizontalAlignment="Center" Width="{Binding ElementName=SizeSlider, Path=Value}"/>
+				<TextBlock HorizontalAlignment="Center" FontWeight="Bold">&lt;ab2d:SvgViewbox Source="pack://siteoforigin:,,,/home11.svg"/&gt;</TextBlock>
+				<TextBlock HorizontalAlignment="Center">(loose svg file in the application directory - not included in the project)</TextBlock>
+				<TextBlock FontSize="30"/>
+                
+                
+                <ab2d:SvgViewbox x:Name="SvgViewboxFromStream" HorizontalAlignment="Center" Width="{Binding ElementName=SizeSlider, Path=Value}"/>
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold">SvgViewboxFromStream.SourceStream = Application.GetResourceStream(new Uri("pack://application:,,,/Resources/home1.svg")).Stream;</TextBlock>
+                <TextBlock HorizontalAlignment="Center">(SvgViewbox.SourceStream is set in code behind to a Stream)</TextBlock>
+				<TextBlock FontSize="30"/>
+
+        <!-- Set source when user presses button so there is no initial wait when the tab is shown -->
+        <!--<ab2d:SvgViewbox Source="http://www.croczilla.com/svg/samples/tiger/tiger.svg" HorizontalAlignment="Center" Width="{Binding ElementName=SizeSlider, Path=Value}"/>-->
+        <Button Name="LoadSvgFromWebButton" Click="LoadSvgFromWebButtonClicked" Width="200" Height="50">Press to load svg file from web</Button>
+        <ab2d:SvgViewbox Name="WebSvgViewbox" Source="" HorizontalAlignment="Center" Visibility="Collapsed" Width="{Binding ElementName=SizeSlider, Path=Value}"/>
+                
+        <TextBlock HorizontalAlignment="Center" FontWeight="Bold">&lt;ab2d:SvgViewbox Source="https://www.ab4d.com/images/tiger.svg"/&gt;</TextBlock>
+        <TextBlock HorizontalAlignment="Center">(web content)</TextBlock>
+        <TextBlock FontSize="30"/>        
+			</StackPanel>
+		</ScrollViewer>
+		<StackPanel Orientation="Vertical" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+			<TextBlock FontWeight="Bold" Text="Width:"/>
+			<Slider Name="SizeSlider" Orientation="Horizontal" Minimum="30" Maximum="500" Value="150" Width="120"/>
+		</StackPanel>
+	</Grid>
+</UserControl>

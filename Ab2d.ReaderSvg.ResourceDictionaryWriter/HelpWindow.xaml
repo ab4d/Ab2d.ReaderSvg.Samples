@@ -1,0 +1,45 @@
+﻿<Window x:Class="Ab2d.ResourceDictionaryWriter.HelpWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Ab2d.ResourceDictionaryWriter"
+    Icon="ab4d.ico"
+    Title="Help" Width="900" SizeToContent="Height">
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Orientation="Vertical" Margin="10">
+                <local:TextBlockEx FontFamily="Verdana" FontSize="16" Foreground="#333" TextWrapping="Wrap" LineHeight="16">
+                    \bResourceDictionaryWriter help\b
+                </local:TextBlockEx>
+                <local:TextBlockEx FontFamily="Verdana" FontSize="12" Foreground="#333" TextWrapping="Wrap" LineHeight="16">
+                    \n
+                    ResourceDictionaryWriter is a helper application that can be used to simplify creating ResourceDictionaries from svg or svgz files.\n
+                    \n
+                    It is using Ab2d.Utility.ReaderSvg.ResourceDictionaryWriter helper class to create ResourceDictionaries from multiple files. The class internally uses \bAb2d.ReaderSvg\b class to read svg or svgz files.\n
+                    \n
+                    \bUsage:\b\n
+                    \n
+                    Click \b"Import svg file"\b button or \bdrag and drop\b file from Windows Explorer to add files to dictionary. In the file open dialog it is possible to select multiple files.\n
+                    \n
+                    Svg files can be imported as Shapes or as Geometries.\n
+                    \n
+                    When files are imported \bas Shapes\b the svg elements are converted into WPF Shapes (Path, Rectangle, TextBlock, etc.) This makes them easier to manipulate from code.\n
+                    \n
+                    When files are imported \bas Geometries\b the svg elements are converted into WPF GeometryDrawing elements. Those elementes are more low level objects and are therefore harder to manipulate but have better performance and lower memory usage.
+                    Because objects in ResourceDictionary are usually not changed, it is usually better to import svg objects are Geometries.\n
+                    \n
+                    When files are added as Geometries, it is also possible to \bfurther optimize\b the read objects by combining objects together. 
+                    Please note that Advanced and Full optimization can lead to some anomalies on the imported images. If this happen select Basic or None optimization. For detailed explanation see the source code and the chm help file - see Ab2d.Common.ReaderSvg.GeometrySettings.\n
+                    \n
+                    For Shapes and Geometries it is possible to specify if \bBrushes and Pens\b are \bwritten as resources\b.
+                    This means that Brushes and Pens are not defined with attributes in each element, but are instead defined as resources in ResourceDictionary.
+                    By default all Brushes and Pens are defined as resources. But it is also possible to specify when resources are used - for example only when a Brush is used more than 2 times.\n
+                    \n
+                    It is also possible to define which \broot element\b is used in resources - for Shapes it is possible to use "Viewbox" or "Canvas", for Geometries "DrawingImage" or "DrawingGroup" are possible.\n
+                    \n
+                    \n
+                    To see a sample WPF Application that is using ResourceDictionary created with this application see the SampleResourceDictionary project (in the same solution as this application).
+                </local:TextBlockEx>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

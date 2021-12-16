@@ -59,7 +59,7 @@ namespace Ab2d.Samples.ReaderSvgSamples
 
         private void LogoImage_OnMouseUp(object sender, MouseButtonEventArgs e)
         {
-            Process.Start("https://www.ab4d.com");
+            Process.Start("http://www.ab4d.com");
         }
 
         //private void ContentFrame_OnNavigated(object sender, NavigationEventArgs e)

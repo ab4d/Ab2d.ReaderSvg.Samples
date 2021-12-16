@@ -37,12 +37,7 @@ namespace Ab2d.Samples.ReaderSvgSamples.Controls
 
         public void PageLoaded(object sender, RoutedEventArgs e)
         {
-            string localSvgFilePath;
-
-            if (AppDomain.CurrentDomain.BaseDirectory.Contains("netcore"))
-                localSvgFilePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\..\\Resources\\paint.svg");
-            else
-                localSvgFilePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\Resources\\paint.svg");
+            string localSvgFilePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources\\paint.svg");
 
             LocalFileSvgDrawing.Source = new Uri(localSvgFilePath);
             LocalFileSvgTextBlock.Text = string.Format("<ab2d:SvgDrawing Source=\"{0}\"/>", localSvgFilePath);

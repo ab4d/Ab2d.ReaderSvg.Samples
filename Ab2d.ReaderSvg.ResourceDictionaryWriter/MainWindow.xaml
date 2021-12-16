@@ -1,0 +1,85 @@
+﻿<Window x:Class="Ab2d.ResourceDictionaryWriter.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="SVG ResourceDictionaryWriter" Height="700" Width="1000"
+    Icon="ab4d.ico">
+    <Grid Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="310" MinWidth="260"/>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <ListBox Name="ResourcesListBox" Grid.Column="0" Grid.Row="0" Margin="5 5 5 0"/>
+
+        <StackPanel Grid.Column="0" Grid.Row="1" Margin="3" Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <Label>Preview scale:</Label>
+                <Slider Name="ScaleSlider" Width="180" Margin="0 0 0 15" Minimum="20" Maximum="300" Value="100" ValueChanged="ScaleSlider_ValueChanged"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <TextBlock VerticalAlignment="Center" Text="Import svg files as:" />
+                <RadioButton Name="ShapesRadioButton" Content="Shapes" VerticalAlignment="Center" GroupName="ImportType" Margin="10 0" Checked="ImportTypeChanged"/>
+                <RadioButton Name="GeometryRadioButton" GroupName="ImportType" VerticalAlignment="Center" IsChecked="True" Content="Geometry" Margin="10 0" Checked="ImportTypeChanged"/>
+            </StackPanel>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Name="GeometryOptimizationTextBlock" Grid.Column="0" Grid.Row="0" Text="Geometry optimization:" VerticalAlignment="Center" Margin="0 0 0 5"/>
+                <ComboBox Name="OptimizationComboBox" Grid.Column="1" Grid.Row="0" Margin="5 0 0 5">
+                    <ComboBoxItem Name="NoneOptimization" ToolTip="No optimization">None</ComboBoxItem>
+                    <ComboBoxItem Name="BasicOptimization" IsSelected="True" ToolTip="CombiningGeometries = true">Basic</ComboBoxItem>
+                    <ComboBoxItem Name="AdvancedOptimization" ToolTip="Basic + CombineElementWithPenAndBrush = true">Advanced</ComboBoxItem>
+                    <ComboBoxItem Name="FullOptimization" ToolTip="Advanced + CombineAllSameIntoOneGeometry = true">Full</ComboBoxItem>
+                </ComboBox>
+
+                <TextBlock Text="Root element:" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" Margin="0 0 0 5"/>
+                <ComboBox Name="RootElementComboBox" Grid.Column="1" Grid.Row="1" SelectedIndex="3" Margin="5 0 0 5" />
+
+                <TextBlock Name="ResourcesLimitTextBlock" Text="Brushes and Pens as resources:" Grid.Column="0" Grid.Row="2" Margin="0 0 0 5" VerticalAlignment="Center"/>
+                <ComboBox Name="ResourcesLimitComboBox" Grid.Column="1" Grid.Row="2" SelectedIndex="3" Margin="5 0 0 5" />
+                
+                <TextBlock Text="Number of decimals in XAML:" Grid.Column="0" Grid.Row="3" VerticalAlignment="Center"/>
+                <ComboBox Name="NoDecimalsComboBox" Grid.Column="1" Grid.Row="3" SelectedIndex="3" Margin="5 0 0 0" SelectionChanged="NoDecimalsComboBox_OnSelectionChanged">
+                    <ComboBoxItem Name="NoDecimalsComboBoxItem">No decimals (12)</ComboBoxItem>
+                    <ComboBoxItem>1 decimal (12.1)</ComboBoxItem>
+                    <ComboBoxItem>2 decimals (12.12)</ComboBoxItem>
+                    <ComboBoxItem>3 decimals (12.123)</ComboBoxItem>
+                    <ComboBoxItem>4 decimals (12.1234)</ComboBoxItem>
+                    <ComboBoxItem>5 decimals (12.12345)</ComboBoxItem>
+                    <ComboBoxItem>6 decimals (12.123456)</ComboBoxItem>
+                    <ComboBoxItem>7 decimals (12.1234567)</ComboBoxItem>
+                    <ComboBoxItem>8 decimals (12.12345678)</ComboBoxItem>
+                    <ComboBoxItem Name="UnlimitedDecimalsComboBoxItem">Unlimited decimals (12.1234...)</ComboBoxItem>
+                </ComboBox>
+            </Grid>
+        </StackPanel>
+
+        <UniformGrid Grid.Row="2" Grid.Column="1" Margin="3" Rows="1" HorizontalAlignment="Right" Height="24">
+            <Button Name="HelpButton" Padding="10 0" Margin="0 0 10 0" Click="HelpButton_Click">Help</Button>
+            <Button Name="ClearButton" Padding="10 0" Margin="0 0 10 0" Click="ClearButton_Click">Clear</Button>
+            <Button Name="CopyButton" Padding="10 0" Margin="0 0 5 0" Click="CopyButton_Click">Copy XAML</Button>
+            <Button Name="SaveButton" Padding="10 0" Margin="0 0 5 0" Click="SaveButton_Click">Save XAML</Button>
+        </UniformGrid>
+
+        <Button Name="ImportSvgButton" Grid.Column="0" Grid.Row="2" Margin="3"
+                Padding="20 5" HorizontalAlignment="Left" IsDefault="True" Click="ImportSvgButton_OnClick">Import svg file</Button>
+
+        <TextBox Name="XamlTextBox" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" Margin="5 5 5 0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" />
+        <GridSplitter Grid.Column="1" Grid.Row="0" Grid.RowSpan="3" Width="3" HorizontalAlignment="Left" Background="Transparent"/>
+    </Grid>
+</Window>
+
